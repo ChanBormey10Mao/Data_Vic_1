@@ -1,46 +1,51 @@
 
-var h = 100;
-var w = 400;
 
+//Width and height
+var margin = 30;
+var w = 1080;
+var h = 700;
 
+//Define map projection
+var projection = d3.geo.mercator()
+    .center([117.00, -30.06])
+    .scale(650)
+    //.translate([width/2,height/2]);
+   
+    
 
-//call to load data and then build our viz
-d3.json("MonthlySalesbyCategoryMultiple.json", function (error, data) {
+//Define path generator
+var path = d3.geo.path()
+    .projection(projection);
 
-    //check the file loaded properly
-    if (error) {  //is there an error?
-        console.log(error);  //if so, log it to the console
-    } else {      //If not we're golden!
-        console.log(data);   //Now show me the money!
-    }
-
-    data.contents.forEach(function(ds){
-        console.log(ds);
-        showHeader(ds);
-        buildLine(ds);
+//Create SVG element
+var svg = d3.select("body")
+    .append("svg")
+    .attr({
+        width: w + margin,
+        height: h + margin
     })
 
+
+//Load in GeoJSON data
+d3.json("aus-state.json", function (geo_data) {
+
+    //debugger;
+    var map = svg.selectAll('path')
+        .data(geo_data.features)
+        .enter()
+        .append('path')
+        .attr('d', path)
+        .style("fill", "rgb(9, 157, 217)")
+        .style("stroke", "darkblue")
+        .style("stroke-width", 0.8);
 });
 
-function showHeader(ds){
-    d3.select("body").append("h1")
-    .text(ds.category + " Sales (2013)");
-}
 
-function buildLine(ds) {
+//slider
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
 
-    var lineFun = d3.svg.line()
-        .x(function (d) { return ((d.month - 20130001) / 3.25); })
-        .y(function (d) { return h - d.sales; })
-        .interpolate("linear");
-
-    var svg = d3.select("body").append("svg").attr({ width: w, height: h });
-
-    var viz = svg.append("path")
-        .attr({
-            d: lineFun(ds.monthlySales),
-            "stroke": "purple",
-            "stroke-width": 2,
-            "fill": "none"
-        });
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
