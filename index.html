@@ -2,36 +2,50 @@
 <html>
 
 <head>
-    <meta name="description" content="Drawing shape" />
-    <meta charset="utf-8">
-    <meta name="author" content="Pum Suan Khai" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Drawing shape" />
+  <meta charset="utf-8">
+  <meta name="author" content="Pum Suan Khai" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Drawing SVG Shapes with D3</title>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <title>Drawing SVG Shapes with D3</title>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+  <link href="styles/styles.css" type="text/css" rel="stylesheet" />
 
 
 </head>
 
 <body>
 
-
-    <h3>Energy Usage Australia</h3>
-
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
-      </div>
+  <h3>Energy Usage Australia</h3>
 
 
+  <div class="custom-select" style="width:400px;">
+    <label>Sort By</label>
+    <select name=" state" id="state">
+      <option value="vic">Victoria</option>
+      <option value="nsw">New South Wale</option>
+      <option value="qld">QuensLand</option>
+      <option value="nt">Northern Territory</option>
+      <option value="sa">South Australia</option>
+      <option value="wa">Western Australia</option>
+    </select>
 
-    <script src="scripts/js.js"></script>
+  </div>
 
-    
-    <footer>COS30045 Data Visualisation <br>
-       </footer>
+
+
+
+  <br>
+
+  <script src="scripts/js.js"></script>
+
+  <br>
+  <br>
+
+
+  <footer>COS30045 Data Visualisation <br>
+  </footer>
 
 
 </body>
