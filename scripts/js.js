@@ -55,13 +55,16 @@ function init() {
     heatChart(dataset);
   });
 
+    
+    //function for heatchart
   function heatChart(dataset) {
     //create svg element name svg variable
     var svg = d3
       .select("#chart")
       .append("svg")
       .attr("width", w)
-      .attr("height", h);
+          .attr("height", h);
+      
 
     //attach dataset to a set of rectable shape
     svg
