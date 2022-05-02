@@ -38,54 +38,65 @@ d3.json("aus-state.json", function (geo_data) {
 
 */
 function init() {
-  //user variable to specify svg heigh and width
+  //set the dimensions and margins of the length
+  var margin = { top: 30, right: 30, bottom: 30, left: 30 };
   var w = 500;
   var h = 200;
-  var padding = 5;
-  var dataset;
 
-  //load data from csv file
-  d3.json("aus-energy.json", function (err, data) {
-    if (err) {
-      return console.warn(error);
+
+  //append the svg object to the body of the page
+  var svg = d3.select("#canvas")
+    .append("svg")
+    .attr("width", w + margin.left + margin.right)
+    .attr("height", h + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
+
+
+  //labels "of row and columns
+  var xAxisLabel = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+  var yAxisLabel = ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10"];
+
+  //build x scales and axis: 
+  var xAxis = d3.scaleBand()
+    .range([0, w])
+    .domain(xAxisLabel)
+    .padding(0.01);
+
+  svg.append("g")
+    .attr("transform", "translate(0, " + h + ")")
+    .call(d3.axisBottom(xAxis))
+
+  //build y scales and axis
+  var yAxis = d3.scaleBand()
+    .range([h, 0])
+    .domain(yAxisLabel)
+    .padding(0.01);
+
+   svg
+     .append("g")
+     .call(d3.axisLeft(yAxis));
+  
+  
+  //build color scale
+  var myColor = d3.scaleLinear().range(["White", "#69b3a2"]).domain([1, 100]);
+  
+  
+  //Read the data
+  d3.csv("data.csv", function (data) {
+      svg.selectAll()
+        .data(data, function (d) { return d.group + ':' + d.variable; })
+        .enter()
+        .append("rect")
+        .attr("x", function (d) { return xAxis(d.group) })
+        .attr("y", function (d) { return yAxis(d.variable) })
+        .attr("width", xAxis.bandwidth())
+        .attr("height", yAxis.bandwidth())
+        .style("fill", function(d) { return myColor(d.value)})
     }
-    dataset = data;
-    console.log(dataset);
+  );
 
-    heatChart(dataset);
-  });
 
-    
-    //function for heatchart
-  function heatChart(dataset) {
-    //create svg element name svg variable
-    var svg = d3
-      .select("#chart")
-      .append("svg")
-      .attr("width", w)
-          .attr("height", h);
-      
-
-    //attach dataset to a set of rectable shape
-    svg
-      .selectAll("rect")
-      .data(dataset) //count and prepare the data value
-      .enter() //create a new place hoder element for each bit of data
-      .append("rect") //append rectagle element to match each place holder
-      .attr("x", function (d, i) {
-        return i * (w / dataset.length);
-      })
-      .attr("y", function (d) {
-        return h - d.wombats * 5;
-      })
-      .attr("width", w / dataset.length - padding)
-      .attr("height", function (d) {
-        return d.wombats * 5 + "px";
-      })
-      .attr("fill", function (d) {
-        return "rgb(0, 0, " + d.wombats * 10 + ")";
-      });
-  }
 }
 
 window.onload = init;
