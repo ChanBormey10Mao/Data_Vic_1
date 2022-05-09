@@ -38,65 +38,105 @@ d3.json("aus-state.json", function (geo_data) {
 
 */
 function init() {
-  //set the dimensions and margins of the length
-  var margin = { top: 30, right: 30, bottom: 30, left: 30 };
-  var w = 500;
-  var h = 200;
 
+  var url = "https://api.github.com/repos/pumsuankhaiSEKTAK/australia_energy_dataset/contents/final_australia.json";
 
-  //append the svg object to the body of the page
-  var svg = d3.select("#canvas")
-    .append("svg")
-    .attr("width", w + margin.left + margin.right)
-    .attr("height", h + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
+  //values will store array of industrial usage data
+  //baseEnergy will store the energy usage from the response
+  var baseEnergy;
+  var state;
+  var year;
+  var agricultureValues;
+  var miningValue;
+  var manufactValue;
+  var electricValue;
+  var constructionValue;
+  var transportValue;
+  var waterValue;
+  var commercialValue;
+  var residentialValue;
+  var otherValue;
+  var totalValue;
 
+  //xScale and yScale is used to scale x and y axis
+  var xScale;
+  var yScale;
 
-  //labels "of row and columns
-  var xAxisLabel = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-  var yAxisLabel = ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10"];
+  //yAxis and xAxis is used to create x and y axis
+  var xAxis;
+  var yAxis;
 
-  //build x scales and axis: 
-  var xAxis = d3.scaleBand()
-    .range([0, w])
-    .domain(xAxisLabel)
-    .padding(0.01);
+  //width and height shows dimensions of the SVG area
+  var W = 1200;
+  var H = 600;
+  //padding will be the padding in the svg canvas
+  var padding = 60;
 
-  svg.append("g")
-    .attr("transform", "translate(0, " + h + ")")
-    .call(d3.axisBottom(xAxis))
+  //svg is a d3 selection of the svg area we created for quick access
+  var svg = d3.select("svg");
 
-  //build y scales and axis
-  var yAxis = d3.scaleBand()
-    .range([h, 0])
-    .domain(yAxisLabel)
-    .padding(0.01);
+  //generateScales generate the scales and assigns them to the variables
+  var generateScales = () => {};
 
-   svg
-     .append("g")
-     .call(d3.axisLeft(yAxis));
-  
-  
-  //build color scale
-  var myColor = d3.scaleLinear().range(["White", "#69b3a2"]).domain([1, 100]);
-  
-  
-  //Read the data
-  d3.csv("data.csv", function (data) {
-      svg.selectAll()
-        .data(data, function (d) { return d.group + ':' + d.variable; })
-        .enter()
-        .append("rect")
-        .attr("x", function (d) { return xAxis(d.group) })
-        .attr("y", function (d) { return yAxis(d.variable) })
-        .attr("width", xAxis.bandwidth())
-        .attr("height", yAxis.bandwidth())
-        .style("fill", function(d) { return myColor(d.value)})
+  //draw canvas sets the width and height of the svg canvas to what we specified
+  var drawCanvas = () => {
+    svg.attr("width", W);
+    svg.attr("height", H);
+  };
+
+  //drawCell() will draw the rectangular cells
+  var drawCells = () => {};
+
+  //generateAxes() will draw the X and Y axis on the canvas
+  var generateAxes = () => {};
+
+  //load our energy data from github api
+  d3.json(url, function (error, data) {
+    //check the file loaded properly
+    if (error) {
+      //is there an error?
+      console.log(error); //if so, log it to the console
+    } else {
+      //If not we're golden!
+      //console.log(data); //Now show me the dataset!
     }
-  );
 
+    //decoding
+    var decodeData = JSON.parse(window.atob(data.content));
+    //console.log(decodeData.contents);
 
+    decodeData.contents.forEach(function (ds) {
+      //load by state and energy only
+      //console.log(ds);
+
+      state = ds.state;
+      baseEnergy = ds.energy;
+
+      ds.energy.forEach(function (innerData) {
+        //load data inside energy only
+      
+        year = innerData.Year;
+        agricultureValues = innerData.Agriculture;
+        miningValue = innerData.Mining;
+        manufactValue = innerData.Manufacturing;
+        electricValue = innerData.Electricity;
+        constructionValue = innerData.Construction;
+        transportValue = innerData.Transport;
+        waterValue = innerData.Water;
+        commercialValue = innerData.Commercial;
+        residentialValue = innerData.Residential;
+        otherValue = innerData.Other;
+        totalValue = innerData.Total;
+
+        //console.log(totalValue);
+
+        drawCanvas();
+        generateScales();
+        drawCells();
+        generateAxes();
+      });
+    });
+  });
 }
 
 window.onload = init;
