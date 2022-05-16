@@ -96,6 +96,7 @@ function init() {
 
     //set yScale to a d3 scaleTime - change it later to industry
     //set the range to make sure the axis exists between padding and height - padding vertically
+    
     yScale = d3
       .scaleBand()
       //.range([padding, H - padding])
@@ -137,13 +138,28 @@ function init() {
     //set the class attribute to "cell" as specified.
     svg
       .selectAll("rect")
-      .data(values)
+      .data(values, function(d){return (
+        d.Agriculture +
+        ":" +
+        d.Mining +
+        ":" +
+        d.Manufacturing +
+        ":" +
+        d.Electricity + ":" +
+        d.Construction + ":" +
+        d.Transport + ":" +
+        d.Water + ":" +
+        d.Commercial + ":" +
+        d.Residential + ":" +
+        d.Other + ":" +
+        d.Total
+      );})
       .enter()
       .append("rect")
       .attr("class", "cell")
       .attr("fill", function (d) {
-        var variance = d["Agriculture"];
-        if (variance <= 50) {
+         
+        if (d.Agriculture <= 50) {
           return "SteelBlue";
         } else if (variance <= 80 && variance >= 51) {
           return "LightSteelBlue";
@@ -160,6 +176,10 @@ function init() {
       })
       .attr("data-industry", (d) => {
         return d["Agriculture"];
+        
+      })
+      .attr("data-industry", (d) => {
+        return d["Mining"];
       })
       .attr("height", function (d) {
         return (H - (2* padding)) / 11;
