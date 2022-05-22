@@ -154,10 +154,10 @@ g {
 div.tooltip {
   position: absolute;
   text-align: center;
-  width: 50px;
-  min-height: 10px;
+  width: 90px;
+  min-height: 20px;
   padding: 2px;
-  font: 8px sans-serif;
+  font: 12px sans-serif;
   border: 1px solid black;
   border-radius: 8px;
   pointer-events: none; /* keep the mouseover when over the tooltip */

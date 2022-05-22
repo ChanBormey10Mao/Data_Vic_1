@@ -376,7 +376,7 @@ function init() {
       .attr("y", 0)
       //.attr("rx", hexRadius*1.25/2)
       .attr("width", legendWidth)
-      .attr("height", 8)
+      .attr("height", 10)
       .style("fill", "url(#legend-traffic)");
 
     //Append title
