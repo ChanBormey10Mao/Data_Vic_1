@@ -80,7 +80,7 @@ function init() {
     ],
     years = d3.range(1974, 2021);
 
-  var margin = { top: 40, right: 50, bottom: 50, left: 70 };
+  var margin = { top: 40, right: 50, bottom: 50, left: 85 };
 
   // calculate width and height based on window size
   var w =
