@@ -62,10 +62,10 @@ Year modification for dataset
 
 */
 
-
-
 function init() {
+
   var dataset;
+
   var industry = [
       "Agriculture",
       "Mining",
@@ -104,6 +104,7 @@ function init() {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+  //industry label
   var industryLable = svg
     .selectAll(".industryLable")
     .data(industry)
@@ -119,6 +120,7 @@ function init() {
     .style("text-anchor", "end")
     .attr("transform", "translate(-6," + gridSize / 1.5 + ")");
 
+  //Year label
   var yearLabel = svg
     .selectAll(".yearLabel")
     .data(years)
@@ -134,7 +136,9 @@ function init() {
     .style("text-anchor", "middle")
     .attr("transform", "translate(" + gridSize / 2 + ", -6)");
 
-  // load data
+
+  //////////////// Load the data from JSON file ///////////////////////
+  ////////////////////////////////////////////////////////////
   d3.json("australia_energy_usage.json", function (error, data) {
     data.forEach(function (d) {
       d.industry = +d.industry;
@@ -191,6 +195,9 @@ function init() {
         return d;
       });
 
+    //////////////// Draw the heat map and update the heat map ///////////////////////
+    ////////////////////////////////////////////////////////////
+
     // function to create the initial heatmap
     function drawHeatmap(location) {
       // filter the data to return object of location of interest
@@ -218,10 +225,9 @@ function init() {
           return color(d.value);
         });
     }
-
     drawHeatmap(locations[currentLocationIndex]);
 
-    var updateHeatmap = function (location) {
+    function updateHeatmap(location) {
       console.log("currentLocationIndex: " + currentLocationIndex);
       // filter data to return object of location of interest
       var selectLocation = nest.find(function (d) {
@@ -237,7 +243,10 @@ function init() {
         .style("fill", function (d) {
           return color(d.value);
         });
-    };
+    }
+
+    //////////////// Create the drop down menu ///////////////////////
+    ///////////////////////////////////////////////////////////////////////////
 
     // run update function when dropdown selection changes
     locationMenu.on("change", function () {
@@ -375,7 +384,6 @@ function init() {
       .attr("transform", "translate(0," + 10 + ")")
       .call(xAxis);
   });
-
 }
 
 window.onload = init;
