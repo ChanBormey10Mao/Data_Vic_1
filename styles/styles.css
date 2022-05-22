@@ -9,28 +9,20 @@ footer {
 
 html {
   min-height: 100%;
+  font-size: 62.5%;
 }
 
 body {
-  background-color: #e0e3f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  color: #163d57;
-}
-
-svg {
-  background-color: #163d57;
-  /*box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
-  /*border-radius: 5px; */
-  padding: 10px;
-}
-
-#canvas {
-  min-height: 600px;
-  min-width: 1200px;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
 .cell:hover {
@@ -66,8 +58,62 @@ g {
   margin-bottom: 10px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: left;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.timeLabel,
+.dayLabel {
+  font-size: 1.6rem;
+  fill: #aaaaaa;
+  font-weight: 300;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#nav-container .left {
+  margin-right: 20px;
+}
+
+#nav-container .right {
+  margin-left: 20px;
+}
+
+#title {
+  font-size: 28px;
+  color: #163d57;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 ul {
   list-style-type: none;
@@ -94,8 +140,31 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
+.cell:hover {
+  fill: black;
+}
 
+g {
+  color: #e0e3f0;
+}
 
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 90px;
+  min-height: 20px;
+  padding: 2px;
+  font: 12px sans-serif;
+  border: 1px solid black;
+  border-radius: 8px;
+  pointer-events: none; /* keep the mouseover when over the tooltip */
+}
+
+.legendTitle {
+  font-size: 1.6rem;
+  fill: #4f4f4f;
+  font-weight: 300;
+}
