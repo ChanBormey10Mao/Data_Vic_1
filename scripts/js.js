@@ -38,7 +38,6 @@ d3.json("aus-state.json", function (geo_data) {
 
 */
 
-
 /*
 Industry Modification for databset
 industry 1 => agriculture
@@ -63,31 +62,30 @@ Year modification for dataset
 */
 
 function init() {
-
   var dataset;
 
   var industry = [
-      "Agriculture",
-      "Mining",
-      "Manufacturing",
-      "Electricity",
-      "Construction",
-      "Transport",
-      "Water",
-      "Commercial",
-      "Residential",
-      "Others",
-    ],
+    "Agriculture",
+    "Mining",
+    "Manufacturing",
+    "Electricity",
+    "Construction",
+    "Transport",
+    "Water",
+    "Commercial",
+    "Residential",
+    "Others",
+  ],
     years = d3.range(1974, 2021);
 
   var margin = { top: 40, right: 50, bottom: 50, left: 85 };
 
   // calculate width and height based on window size
   var w =
-      Math.max(Math.min(window.innerWidth, 1800), 500) -
-      margin.left -
-      margin.right -
-      20,
+    Math.max(Math.min(window.innerWidth, 1800), 500) -
+    margin.left -
+    margin.right -
+    20,
     gridSize = Math.floor(w / years.length),
     h = gridSize * (industry.length + 2);
 
@@ -136,7 +134,6 @@ function init() {
     .style("text-anchor", "middle")
     .attr("transform", "translate(" + gridSize / 2 + ", -6)");
 
-
   //////////////// Load the data from JSON file ///////////////////////
   ////////////////////////////////////////////////////////////
   d3.json("australia_energy_usage.json", function (error, data) {
@@ -164,6 +161,41 @@ function init() {
         "#bd0026",
         "#800026",
       ]);
+
+    // Create the tooltip div
+    var tooltip = d3
+      .select("#heatmap")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "1px")
+      .style("border-radius", "5px")
+      .style("padding", "1px");
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function (d) {
+      d3.select(this).classed("overed", true);
+      tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
+    };
+    var mousemove = function (d) {
+      tooltip
+        .html("The exact value of<br>this cell is: " + d.value)
+        .style(
+          "left",
+          d3.event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
+        )
+        .style(
+          "top",
+          d3.event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
+        );
+    };
+    var mouseleave = function (d) {
+      d3.select(this).classed("overed", false);
+      tooltip.transition().duration(300).style("opacity", 0);
+      tooltip.html("");
+    };
 
     // group data by location
     var nest = d3
@@ -223,7 +255,10 @@ function init() {
         .style("stroke-opacity", 0.6)
         .style("fill", function (d) {
           return color(d.value);
-        });
+        })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
     }
     drawHeatmap(locations[currentLocationIndex]);
 
@@ -242,7 +277,10 @@ function init() {
         .duration(500)
         .style("fill", function (d) {
           return color(d.value);
-        });
+        })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
     }
 
     //////////////// Create the drop down menu ///////////////////////
