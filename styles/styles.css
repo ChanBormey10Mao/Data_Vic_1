@@ -151,14 +151,16 @@ g {
   color: #e0e3f0;
 }
 
-#tooltip {
-  visibility: hidden;
-  height: auto;
-  width: auto;
-  margin-top: 2px;
-  color: #163d57;
-  font-size: 24px;
-  margin-bottom: 5px;
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  min-height: 10px;
+  padding: 2px;
+  font: 8px sans-serif;
+  border: 1px solid black;
+  border-radius: 8px;
+  pointer-events: none; /* keep the mouseover when over the tooltip */
 }
 
 .legendTitle {
