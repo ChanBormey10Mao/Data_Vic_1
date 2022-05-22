@@ -37,256 +37,345 @@ d3.json("aus-state.json", function (geo_data) {
 });
 
 */
+
+
+/*
+Industry Modification for databset
+industry 1 => agriculture
+industry 2 => mining
+industry 3 => manufacturing
+industry 4 => electricity
+industry 5 => construction
+industry 6 => transport
+industry 7 => water
+industry 8 => commercial
+industry 9 => residential
+industry 10 => others
+
+Year modification for dataset
+1974 => 1
+1975 => 2
+1976 => 3
+....
+2019 => 46
+2020 => 47
+
+*/
+
+
+
 function init() {
-  var url =
-    "https://api.github.com/repos/pumsuankhaiSEKTAK/australia_energy_dataset/contents/final_australia.json";
+  var dataset;
+  var industry = [
+      "Agriculture",
+      "Mining",
+      "Manufacturing",
+      "Electricity",
+      "Construction",
+      "Transport",
+      "Water",
+      "Commercial",
+      "Residential",
+      "Others",
+    ],
+    years = d3.range(1974, 2021);
 
-  //var url = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json";
+  var margin = { top: 40, right: 50, bottom: 50, left: 85 };
 
-  //values will store array of industrial usage data
-  //baseEnergy will store the energy usage from the response
-  var baseEnergy;
-  var values = [];
-  var state;
-  var year;
-  var agricultureValues;
-  var miningValue;
-  var manufactValue;
-  var electricValue;
-  var constructionValue;
-  var transportValue;
-  var waterValue;
-  var commercialValue;
-  var residentialValue;
-  var otherValue;
-  var totalValue;
+  // calculate width and height based on window size
+  var w =
+      Math.max(Math.min(window.innerWidth, 1800), 500) -
+      margin.left -
+      margin.right -
+      20,
+    gridSize = Math.floor(w / years.length),
+    h = gridSize * (industry.length + 2);
 
-  //xScale and yScale is used to scale x and y axis
-  var xScale;
-  var yScale;
+  //reset the overall font size
+  var newFontSize = (w * 30) / 900;
+  d3.select("html").style("font-size", newFontSize + "%");
 
-  //yAxis and xAxis is used to create x and y axis
-  var xAxis;
-  var yAxis;
+  // svg container
+  var svg = d3
+    .select("#heatmap")
+    .append("svg")
+    .attr("width", w + margin.top + margin.bottom)
+    .attr("height", h + margin.left + margin.right)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  //width and height shows dimensions of the SVG area
-  var W = 1200;
-  var H = 600;
-  //padding will be the padding in the svg canvas
-  var padding = 80;
+  var industryLable = svg
+    .selectAll(".industryLable")
+    .data(industry)
+    .enter()
+    .append("text")
+    .text(function (d) {
+      return d;
+    })
+    .attr("x", 0)
+    .attr("y", function (d, i) {
+      return i * gridSize;
+    })
+    .style("text-anchor", "end")
+    .attr("transform", "translate(-6," + gridSize / 1.5 + ")");
 
-  //svg is a d3 selection of the svg area we created for quick access
-  var svg = d3.select("svg");
+  var yearLabel = svg
+    .selectAll(".yearLabel")
+    .data(years)
+    .enter()
+    .append("text")
+    .text(function (d) {
+      return d;
+    })
+    .attr("x", function (d, i) {
+      return i * gridSize;
+    })
+    .attr("y", 0)
+    .style("text-anchor", "middle")
+    .attr("transform", "translate(" + gridSize / 2 + ", -6)");
 
-  //generateScales generate the scales and assigns them to the variables
-  function generateScales() {
-    var minYear = d3.min(values, function (d) {
-      return d["Year"];
+  // load data
+  d3.json("australia_energy_usage.json", function (error, data) {
+    data.forEach(function (d) {
+      d.industry = +d.industry;
+      d.year = +d.year;
+      d.value = +d.value;
     });
+    dataset = data;
 
-    var maxYear = d3.max(values, function (d) {
-      return d["Year"];
-    });
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    //set the xScale to d3 scaleLinear - year are just integer
-    xScale = d3
+    // linear colour scale
+    var colours = d3
       .scaleLinear()
-      .domain([minYear - 1, maxYear])
-      .range([padding, W - padding]);
+      .domain(d3.range(1, 11, 1))
+      .range([
+        "#ffffcc",
+        "#ffeda0",
+        "#fed976",
+        "#feb24c",
+        "#fd8d3c",
+        "#fc4e2a",
+        "#e31a1c",
+        "#bd0026",
+        "#800026",
+      ]);
 
-    //set yScale to a d3 scaleTime - change it later to industry
-    //set the range to make sure the axis exists between padding and height - padding vertically
-    
-    yScale = d3
-      .scaleBand()
-      //.range([padding, H - padding])
-      .range([0, H - padding])
-      .domain([
-        "Agriculture",
-        "Mining",
-        "Manufacturing",
-        "Electricity",
-        "Construction",
-        "Transport",
-        "Water",
-        "Commercial",
-        "Residential",
-        "Other",
-        "Total",
-      ])
-      .padding([0.8]);
-  }
+    // group data by location
+    var nest = d3
+      .nest()
+      .key(function (d) {
+        return d.location;
+      })
+      .entries(dataset);
 
-  //Define quantize scale to sort data values into buckets of color
-  //Colors taken from colorbrewer
-  var color = d3
-    .scaleQuantize()
-    .range([["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]]);
+    // array of locations in the data
+    var locations = nest.map(function (d) {
+      return d.key;
+    });
+    var currentLocationIndex = 0;
 
-  //draw canvas sets the width and height of the svg canvas to what we specified
-  function drawCanvas() {
-    svg.attr("width", W);
-    svg.attr("height", H);
-  }
-
-  //drawCell() will draw the rectangular cells
-  function drawCells() {
-    //select all rectangles in the svg canvas
-    //bind them to the values array by calling data()
-    //call enter() to specify what to do when there is an array element in no rectangle -> all of them in the case
-    //use append() to create new rectangle
-    //set the class attribute to "cell" as specified.
-    svg
-      .selectAll("rect")
-      .data(values, function(d){return (
-        d.Agriculture +
-        ":" +
-        d.Mining +
-        ":" +
-        d.Manufacturing +
-        ":" +
-        d.Electricity + ":" +
-        d.Construction + ":" +
-        d.Transport + ":" +
-        d.Water + ":" +
-        d.Commercial + ":" +
-        d.Residential + ":" +
-        d.Other + ":" +
-        d.Total
-      );})
+    // create location dropdown menu
+    var locationMenu = d3.select("#locationDropdown");
+    locationMenu
+      .append("select")
+      .attr("id", "locationMenu")
+      .selectAll("option")
+      .data(locations)
       .enter()
-      .append("rect")
-      .attr("class", "cell")
-      .attr("fill", function (d) {
-         
-        if (d.Agriculture <= 50) {
-          return "SteelBlue";
-        } else if (variance <= 80 && variance >= 51) {
-          return "LightSteelBlue";
-        } else if (variance <= 100 && variance >= 81) {
-          return "Orange";
-        } else {
-          return "Crimson";
-        }
+      .append("option")
+      .attr("value", function (d, i) {
+        return i;
       })
-      //call the attribute method to create data-year, data-industry, data-energy usage attribute and just return d
-      .attr("data-year", (d) => {
-        //set data-year to return the year field from the d
-        return d["Year"];
-      })
-      .attr("data-industry", (d) => {
-        return d["Agriculture"];
-        
-      })
-      .attr("data-industry", (d) => {
-        return d["Mining"];
-      })
-      .attr("height", function (d) {
-        return (H - (2* padding)) / 11;
-      })
-      .attr("y", function (d) {
-        return yScale(yAxis);
-      })
-      .attr("width", function (d) {
-        var minYear = d3.min(values, function (d) {
-          return d["Year"];
-        });
-
-        var maxYear = d3.max(values, function (d) {
-          return d["Year"];
-        });
-
-        let yearCount = maxYear - minYear;
-
-        return (W - (2 * padding)) / yearCount;
-      })
-      .attr("x", function (d) {
-        return xScale(d["Year"]);
+      .text(function (d) {
+        return d;
       });
-  }
 
-  //generateAxes() will draw the X and Y axis on the canvas
-  function generateAxes() {
-    //create xAxis which an axisbottom that uses the xScale
-    //create a new group element in the canvas
-    //call xXis to draw the axis in the group element
-    //give it an id of x-axis as specified
-    //give it a transformation of translate by height - padding downwards on y to push it down to the correct position
-    xAxis = d3.axisBottom(xScale).tickFormat(d3.format("d"));
-    svg
-      .append("g")
-      .call(xAxis)
-      .attr("id", "x-axis")
-      .attr("transform", "translate(0, " + (H - padding) + ")")
-      .selectAll("text")
-      .attr("transform", "translate(-10,10)rotate(-45)")
-      .style("text-anchor", "end")
-      .style("font-size", 14)
-      .style("fill", "white");
+    // function to create the initial heatmap
+    function drawHeatmap(location) {
+      // filter the data to return object of location of interest
+      var selectLocation = nest.find(function (d) {
+        return d.key == location;
+      });
 
-    //create a yAxis which is an existLeft that uses the yScale
-    yAxis = d3.axisLeft(yScale);
-    svg
-      .append("g")
-      .call(yAxis)
-      .attr("id", "y-axis")
-      //give it a transformation of translate by padding right on x to push it right to align with the x axis
-      .attr("transform", "translate(" + padding + ", 0)")
-      .selectAll("text")
-      //.attr("transform", "translate(-10,10)rotate(-45)")
-      .style("text-anchor", "end")
-      .style("font-size", 10)
-      .style("fill", "white");
-  }
-
-  ///Main//
-  //load our energy data from github api
-  d3.json(url, function (error, data) {
-    //check the file loaded properly
-    if (error) {
-      //is there an error?
-      console.log(error); //if so, log it to the console
-    } else {
-      //If not we're golden!
-      //console.log(data); //Now show me the dataset!
+      svg
+        .selectAll(".year")
+        .data(selectLocation.values)
+        .enter()
+        .append("rect")
+        .attr("x", function (d) {
+          return (d.year - 1) * gridSize;
+        })
+        .attr("y", function (d) {
+          return (d.industry - 1) * gridSize;
+        })
+        .attr("class", "year bordered")
+        .attr("width", gridSize)
+        .attr("height", gridSize)
+        .style("stroke", "white")
+        .style("stroke-opacity", 0.6)
+        .style("fill", function (d) {
+          return color(d.value);
+        });
     }
 
-    //decoding
-    var decodeData = JSON.parse(window.atob(data.content));
-    //console.log(decodeData.contents);
+    drawHeatmap(locations[currentLocationIndex]);
 
-    decodeData.contents.forEach(function (ds) {
-      //load by state and energy only
-      //console.log(ds);
-
-      state = ds.state;
-      values = ds.energy;
-
-      ds.energy.forEach(function (innerData) {
-        //load data inside energy only
-
-        year = innerData.Year;
-        agricultureValues = innerData.Agriculture;
-        miningValue = innerData.Mining;
-        manufactValue = innerData.Manufacturing;
-        electricValue = innerData.Electricity;
-        constructionValue = innerData.Construction;
-        transportValue = innerData.Transport;
-        waterValue = innerData.Water;
-        commercialValue = innerData.Commercial;
-        residentialValue = innerData.Residential;
-        otherValue = innerData.Other;
-        totalValue = innerData.Total;
-
-        //console.log(year);
-
-        drawCanvas();
-        generateScales();
-        drawCells();
-        generateAxes();
+    var updateHeatmap = function (location) {
+      console.log("currentLocationIndex: " + currentLocationIndex);
+      // filter data to return object of location of interest
+      var selectLocation = nest.find(function (d) {
+        return d.key == location;
       });
+
+      // update the data and redraw heatmap
+      var heatmap = svg
+        .selectAll(".year")
+        .data(selectLocation.values)
+        .transition()
+        .duration(500)
+        .style("fill", function (d) {
+          return color(d.value);
+        });
+    };
+
+    // run update function when dropdown selection changes
+    locationMenu.on("change", function () {
+      // find which location was selected from the dropdown
+      var selectedLocation = d3.select(this).select("select").property("value");
+      currentLocationIndex = +selectedLocation;
+      // run update function with selected location
+      updateHeatmap(locations[currentLocationIndex]);
     });
+
+    d3.selectAll(".nav").on("click", function () {
+      if (d3.select(this).classed("left")) {
+        if (currentLocationIndex == 0) {
+          currentLocationIndex = locations.length - 1;
+        } else {
+          currentLocationIndex--;
+        }
+      } else if (d3.select(this).classed("right")) {
+        if (currentLocationIndex == locations.length - 1) {
+          currentLocationIndex = 0;
+        } else {
+          currentLocationIndex++;
+        }
+      }
+      d3.select("#locationMenu").property("value", currentLocationIndex);
+      updateHeatmap(locations[currentLocationIndex]);
+    });
+
+    //////////////// Create the gradient for the legend ///////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+
+    //Extra scale since the color scale is interpolated
+    var countScale = d3
+      .scaleLinear()
+      .domain([
+        0,
+        d3.max(dataset, function (d) {
+          return d.value;
+        }),
+      ])
+      .range([0, w]);
+
+    //Calculate the variables for the temp gradient
+    var numStops = 10;
+    var countRange = countScale.domain();
+    countRange[2] = countRange[1] - countRange[0];
+    countPoint = [];
+    for (var i = 0; i < numStops; i++) {
+      countPoint.push((i * countRange[2]) / (numStops - 1) + countRange[0]);
+    } //for i
+
+    //Create the gradient
+    svg
+      .append("defs")
+      .append("linearGradient")
+      .attr("id", "legend-traffic")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "0%")
+      .selectAll("stop")
+      .data(d3.range(numStops))
+      .enter()
+      .append("stop")
+      .attr("offset", function (d, i) {
+        return countScale(countPoint[i]) / w;
+      })
+      .attr("stop-color", function (d, i) {
+        return color(countPoint[i]);
+      });
+
+    ////////////////////////// Draw the legend ////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+    var legendWidth = Math.min(w * 0.8, 400);
+    //Color Legend container
+    var legendsvg = svg
+      .append("g")
+      .attr("class", "legendWrapper")
+      .attr(
+        "transform",
+        "translate(" + w / 2 + "," + (gridSize * industry.length + 40) + ")"
+      );
+
+    //Draw the Rectangle
+    legendsvg
+      .append("rect")
+      .attr("class", "legendRect")
+      .attr("x", -legendWidth / 2)
+      .attr("y", 0)
+      //.attr("rx", hexRadius*1.25/2)
+      .attr("width", legendWidth)
+      .attr("height", 8)
+      .style("fill", "url(#legend-traffic)");
+
+    //Append title
+    legendsvg
+      .append("text")
+      .attr("class", "legendTitle")
+      .attr("x", 0)
+      .attr("y", -10)
+      .style("text-anchor", "middle")
+      .text("Australia Energy Usage in PJ (Petajoule)");
+
+    //Set scale for x-axis
+    var xScale = d3
+      .scaleLinear()
+      .range([-legendWidth / 2, legendWidth / 2])
+      .domain([
+        //calculate the min value
+        d3.min(dataset, function (d) {
+          //looking at the first number in the array
+          return d["value"];
+        }),
+        //calculating the max value
+        d3.max(dataset, function (d) {
+          //looking at the first number in the array
+          return d["value"];
+        }),
+      ]);
+
+    //Define x-axis
+    var xAxis = d3
+      .axisBottom()
+      //putting the space by 5
+      .ticks(5)
+      //scale the x scale
+      .scale(xScale);
+
+    //.scale(xScale);
+
+    //Set up X axis
+    legendsvg
+      .append("g")
+      .attr("class", "axis")
+      .attr("transform", "translate(0," + 10 + ")")
+      .call(xAxis);
   });
+
 }
 
 window.onload = init;
