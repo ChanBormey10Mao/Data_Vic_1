@@ -19,7 +19,7 @@
 
   <h1 id="title">Energy Usage In Australia</h1>
 
-  <h4 id="description">Australia Energy Usage from 1973-4 to 2019-20.</h4>
+  <h3 id="description">Australia Energy Usage from 1973-4 to 2019-20.</h3>
   <br>
   <ul>
     <li><a href="index.html">Heat Map</a></li>
@@ -30,41 +30,16 @@
 
   <br>
 
-  <div class="custom-select" style="width:200px;">
-    <label>Sort by</label>
-    <select>
-      <option value="vic">Victoria</option>
-      <option value="nsw">New South Wale</option>
-      <option value="qld">QuensLand</option>
-      <option value="nt">Northern Territory</option>
-      <option value="sa">South Australia</option>
-      <option value="wa">Western Australia</option>
-    </select>
+  <h4>Sorting by Location or State</h4>
+  <br>
+  <div id="nav-container">
+    <div class="nav left">Previous</div>
+    <div id="locationDropdown"></div>
+    <div class="nav right">Next</div>
   </div>
 
-  <br><br>
-  <svg id="canvas">
-  </svg>
-
-  <svg id="legend">
-    <g>
-      <rect x="10" y="0" width="40" height="40" fill="#ffffcc"></rect>
-      <text x="60" y="20" fill="white">50 PJ or less</text>
-    </g>
-    <g>
-      <rect x="10" y="40" width="40" height="40" fill="#c2e699"></rect>
-      <text x="60" y="60" fill="white">80 PJ or above average</text>
-    </g>
-    <g>
-      <rect x="10" y="80" width="40" height="40" fill="#78c679"></rect>
-      <text x="60" y="100" fill="white">100 PJ or above average</text>
-    </g>
-    <g>
-      <rect x="10" y="120" width="40" height="40" fill="#31a354"></rect>
-      <text x="60" y="140" fill="white">200 PJ or above</text>
-    </g>
-
-  </svg>
+  <div id="heatmap"></div>
+  <br>
 
   <script src="scripts/js.js"></script>
 
