@@ -154,7 +154,7 @@ g {
 div.tooltip {
   position: absolute;
   text-align: center;
-  width: 90px;
+  width: 150px;
   min-height: 20px;
   padding: 2px;
   font: 12px sans-serif;
