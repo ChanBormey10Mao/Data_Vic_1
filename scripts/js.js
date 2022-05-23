@@ -176,7 +176,7 @@ function init() {
 
     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function (d) {
-      d3.select(this).classed("overed", true);
+      d3.select(this).style("stroke", "black");
       tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
     };
     var mousemove = function (d) {
@@ -192,7 +192,7 @@ function init() {
         );
     };
     var mouseleave = function (d) {
-      d3.select(this).classed("overed", false);
+      d3.select(this).style("stroke", "none");
       tooltip.transition().duration(300).style("opacity", 0);
       tooltip.html("");
     };
