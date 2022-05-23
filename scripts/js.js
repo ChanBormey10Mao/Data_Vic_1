@@ -168,7 +168,7 @@ function init() {
       .append("div")
       .style("opacity", 0)
       .attr("class", "tooltip")
-      .style("background-color", "white")
+      .style("background-color", "#F1E60E")
       .style("border", "solid")
       .style("border-width", "1px")
       .style("border-radius", "5px")
@@ -180,11 +180,72 @@ function init() {
       tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
     };
     var mousemove = function (d) {
+      switch (d.industry) {
+        case 1:
+          var industry = "Agriculture";
+          break;
+        case 2:
+          var industry = "Minning";
+          break;
+        case 3:
+          var industry = "Manufacturing";
+          break;
+        case 4:
+          var industry = "Electricity";
+          break;
+        case 5:
+          var industry = "Construction";
+          break;
+        case 6:
+          var industry = "Transport";
+          break;
+        case 7:
+          var industry = "Water";
+          break;
+        case 8:
+          var industry = "Commercial";
+          break;
+        case 9:
+          var industry = "Residential";
+          break;
+        case 10:
+          var industry = "Others";
+          break;
+      }
+      arr1 = [];
+      arr2 = [];
+      var year = 1974;
+      for (i = 0; i < 48; i++) {
+        arr1.push(i);
+        arr2.push(year);
+        year = year + 1;
+      }
+      var rightYear = 0;
+      arr1.forEach((a1) => {
+        if (a1 == d.year) {
+          rightYear = arr2[a1] - 1;
+        }
+      });
+
+      console.log("Right Year = " + rightYear);
+
+      var contentTooltip =
+        'Industry : <span style="color:red">' +
+        industry +
+        '</span><br>State : <span  style="color:red">' +
+        d.location +
+        '</span><br> Year: <span style="color:red">' +
+        rightYear +
+        '</span><br> Energy Usage: <span style="color:red"> ' +
+        d.value +
+        " PJ </span>";
+
+      console.log("The Industry : " + industry + "<br>");
       tooltip
-        .html("The exact value of<br>this cell is: " + d.value)
+        .html(contentTooltip)
         .style(
           "left",
-          d3.event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
+          d3.event.pageX - d3.select(".tooltip").node().offsetWidth + "px"
         )
         .style(
           "top",
