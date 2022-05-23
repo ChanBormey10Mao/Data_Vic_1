@@ -65,27 +65,27 @@ function init() {
   var dataset;
 
   var industry = [
-    "Agriculture",
-    "Mining",
-    "Manufacturing",
-    "Electricity",
-    "Construction",
-    "Transport",
-    "Water",
-    "Commercial",
-    "Residential",
-    "Others",
-  ],
+      "Agriculture",
+      "Mining",
+      "Manufacturing",
+      "Electricity",
+      "Construction",
+      "Transport",
+      "Water",
+      "Commercial",
+      "Residential",
+      "Others",
+    ],
     years = d3.range(1974, 2021);
 
   var margin = { top: 40, right: 50, bottom: 50, left: 85 };
 
   // calculate width and height based on window size
   var w =
-    Math.max(Math.min(window.innerWidth, 1800), 500) -
-    margin.left -
-    margin.right -
-    20,
+      Math.max(Math.min(window.innerWidth, 1800), 500) -
+      margin.left -
+      margin.right -
+      20,
     gridSize = Math.floor(w / years.length),
     h = gridSize * (industry.length + 2);
 
@@ -144,6 +144,7 @@ function init() {
     });
     dataset = data;
 
+    //schemeCategory10
     var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     // linear colour scale
@@ -151,15 +152,16 @@ function init() {
       .scaleLinear()
       .domain(d3.range(1, 11, 1))
       .range([
-        "#ffffcc",
-        "#ffeda0",
-        "#fed976",
-        "#feb24c",
-        "#fd8d3c",
-        "#fc4e2a",
-        "#e31a1c",
-        "#bd0026",
-        "#800026",
+        "#87cefa",
+        "#86c6ef",
+        "#85bde4",
+        "#83b7d9",
+        "#82afce",
+        "#80a6c2",
+        "#7e9fb8",
+        "#7995aa",
+        "#758b9e",
+        "#708090",
       ]);
 
     // Create the tooltip div
@@ -176,7 +178,7 @@ function init() {
 
     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function (d) {
-      d3.select(this).classed("overed", true);
+      d3.select(this).style("stroke", "black");
       tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
     };
     var mousemove = function (d) {
@@ -192,7 +194,7 @@ function init() {
         );
     };
     var mouseleave = function (d) {
-      d3.select(this).classed("overed", false);
+      d3.select(this).style("stroke", "none");
       tooltip.transition().duration(300).style("opacity", 0);
       tooltip.html("");
     };
@@ -254,8 +256,9 @@ function init() {
         .style("stroke", "white")
         .style("stroke-opacity", 0.6)
         .style("fill", function (d) {
-          return color(d.value);
+          return colours(d.value);
         })
+        
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
@@ -276,8 +279,8 @@ function init() {
         .transition()
         .duration(500)
         .style("fill", function (d) {
-          return color(d.value);
-        })
+          return colours(d.value);
+        })        
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
@@ -320,7 +323,9 @@ function init() {
     var countScale = d3
       .scaleLinear()
       .domain([
-        0,
+        d3.min(dataset, function (d) {
+          return d.value;
+        }),
         d3.max(dataset, function (d) {
           return d.value;
         }),
@@ -396,12 +401,12 @@ function init() {
         //calculate the min value
         d3.min(dataset, function (d) {
           //looking at the first number in the array
-          return d["value"];
+          return d.value;
         }),
         //calculating the max value
         d3.max(dataset, function (d) {
           //looking at the first number in the array
-          return d["value"];
+          return d.value;
         }),
       ]);
 
