@@ -1,0 +1,1412 @@
+[
+  {
+    "location": "vic",
+    "year": 1974,
+    "total": 710.9
+  },
+  {
+    "location": "vic",
+    "year": 1975,
+    "total": 731
+  },
+  {
+    "location": "vic",
+    "year": 1976,
+    "total": 752.8
+  },
+  {
+    "location": "vic",
+    "year": 1977,
+    "total": 802.1
+  },
+  {
+    "location": "vic",
+    "year": 1978,
+    "total": 823.1
+  },
+  {
+    "location": "vic",
+    "year": 1979,
+    "total": 857.3
+  },
+  {
+    "location": "vic",
+    "year": 1980,
+    "total": 869.4
+  },
+  {
+    "location": "vic",
+    "year": 1981,
+    "total": 880.8
+  },
+  {
+    "location": "vic",
+    "year": 1982,
+    "total": 939.4
+  },
+  {
+    "location": "vic",
+    "year": 1983,
+    "total": 896.5
+  },
+  {
+    "location": "vic",
+    "year": 1984,
+    "total": 904.9
+  },
+  {
+    "location": "vic",
+    "year": 1985,
+    "total": 936.2
+  },
+  {
+    "location": "vic",
+    "year": 1986,
+    "total": 926.4
+  },
+  {
+    "location": "vic",
+    "year": 1987,
+    "total": 979.5
+  },
+  {
+    "location": "vic",
+    "year": 1988,
+    "total": 1014.5
+  },
+  {
+    "location": "vic",
+    "year": 1989,
+    "total": 1090.2
+  },
+  {
+    "location": "vic",
+    "year": 1990,
+    "total": 1099.8
+  },
+  {
+    "location": "vic",
+    "year": 1991,
+    "total": 1090.9
+  },
+  {
+    "location": "vic",
+    "year": 1992,
+    "total": 1108.7
+  },
+  {
+    "location": "vic",
+    "year": 1993,
+    "total": 1104.7
+  },
+  {
+    "location": "vic",
+    "year": 1994,
+    "total": 1102.5
+  },
+  {
+    "location": "vic",
+    "year": 1995,
+    "total": 1152.2
+  },
+  {
+    "location": "vic",
+    "year": 1996,
+    "total": 1184.9
+  },
+  {
+    "location": "vic",
+    "year": 1997,
+    "total": 1202.7
+  },
+  {
+    "location": "vic",
+    "year": 1998,
+    "total": 1286.3
+  },
+  {
+    "location": "vic",
+    "year": 1999,
+    "total": 1318.3
+  },
+  {
+    "location": "vic",
+    "year": 2000,
+    "total": 1346.3
+  },
+  {
+    "location": "vic",
+    "year": 2001,
+    "total": 1337.2
+  },
+  {
+    "location": "vic",
+    "year": 2002,
+    "total": 1371.9
+  },
+  {
+    "location": "vic",
+    "year": 2003,
+    "total": 1330.6
+  },
+  {
+    "location": "vic",
+    "year": 2004,
+    "total": 1364.9
+  },
+  {
+    "location": "vic",
+    "year": 2005,
+    "total": 1356.5
+  },
+  {
+    "location": "vic",
+    "year": 2006,
+    "total": 1429.5
+  },
+  {
+    "location": "vic",
+    "year": 2007,
+    "total": 1433.9
+  },
+  {
+    "location": "vic",
+    "year": 2008,
+    "total": 1426.1
+  },
+  {
+    "location": "vic",
+    "year": 2009,
+    "total": 1421.3
+  },
+  {
+    "location": "vic",
+    "year": 2010,
+    "total": 1426.7
+  },
+  {
+    "location": "vic",
+    "year": 2011,
+    "total": 1448.5
+  },
+  {
+    "location": "vic",
+    "year": 2012,
+    "total": 1457.3
+  },
+  {
+    "location": "vic",
+    "year": 2013,
+    "total": 1425.3
+  },
+  {
+    "location": "vic",
+    "year": 2014,
+    "total": 1423.3
+  },
+  {
+    "location": "vic",
+    "year": 2015,
+    "total": 1412.4
+  },
+  {
+    "location": "vic",
+    "year": 2016,
+    "total": 1441.7
+  },
+  {
+    "location": "vic",
+    "year": 2017,
+    "total": 1409.5
+  },
+  {
+    "location": "vic",
+    "year": 2018,
+    "total": 1338.5
+  },
+  {
+    "location": "vic",
+    "year": 2019,
+    "total": 1305.4
+  },
+  {
+    "location": "vic",
+    "year": 2020,
+    "total": 1235.6
+  },
+  {
+    "location": "wa",
+    "year": 1974,
+    "total": 272.6
+  },
+  {
+    "location": "wa",
+    "year": 1975,
+    "total": 279.6
+  },
+  {
+    "location": "wa",
+    "year": 1976,
+    "total": 296.5
+  },
+  {
+    "location": "wa",
+    "year": 1977,
+    "total": 322.1
+  },
+  {
+    "location": "wa",
+    "year": 1978,
+    "total": 328.4
+  },
+  {
+    "location": "wa",
+    "year": 1979,
+    "total": 336
+  },
+  {
+    "location": "wa",
+    "year": 1980,
+    "total": 334.1
+  },
+  {
+    "location": "wa",
+    "year": 1981,
+    "total": 322
+  },
+  {
+    "location": "wa",
+    "year": 1982,
+    "total": 300.1
+  },
+  {
+    "location": "wa",
+    "year": 1983,
+    "total": 304.6
+  },
+  {
+    "location": "wa",
+    "year": 1984,
+    "total": 313.9
+  },
+  {
+    "location": "wa",
+    "year": 1985,
+    "total": 343.1
+  },
+  {
+    "location": "wa",
+    "year": 1986,
+    "total": 344.8
+  },
+  {
+    "location": "wa",
+    "year": 1987,
+    "total": 358.4
+  },
+  {
+    "location": "wa",
+    "year": 1988,
+    "total": 391.1
+  },
+  {
+    "location": "wa",
+    "year": 1989,
+    "total": 427.7
+  },
+  {
+    "location": "wa",
+    "year": 1990,
+    "total": 473
+  },
+  {
+    "location": "wa",
+    "year": 1991,
+    "total": 488.4
+  },
+  {
+    "location": "wa",
+    "year": 1992,
+    "total": 496.4
+  },
+  {
+    "location": "wa",
+    "year": 1993,
+    "total": 522
+  },
+  {
+    "location": "wa",
+    "year": 1994,
+    "total": 554.1
+  },
+  {
+    "location": "wa",
+    "year": 1995,
+    "total": 592.7
+  },
+  {
+    "location": "wa",
+    "year": 1996,
+    "total": 630.2
+  },
+  {
+    "location": "wa",
+    "year": 1997,
+    "total": 649.6
+  },
+  {
+    "location": "wa",
+    "year": 1998,
+    "total": 662.6
+  },
+  {
+    "location": "wa",
+    "year": 1999,
+    "total": 672.8
+  },
+  {
+    "location": "wa",
+    "year": 2000,
+    "total": 688.5
+  },
+  {
+    "location": "wa",
+    "year": 2001,
+    "total": 708.1
+  },
+  {
+    "location": "wa",
+    "year": 2002,
+    "total": 722.9
+  },
+  {
+    "location": "wa",
+    "year": 2003,
+    "total": 720
+  },
+  {
+    "location": "wa",
+    "year": 2004,
+    "total": 730.3
+  },
+  {
+    "location": "wa",
+    "year": 2005,
+    "total": 748.2
+  },
+  {
+    "location": "wa",
+    "year": 2006,
+    "total": 757.1
+  },
+  {
+    "location": "wa",
+    "year": 2007,
+    "total": 820.7
+  },
+  {
+    "location": "wa",
+    "year": 2008,
+    "total": 828
+  },
+  {
+    "location": "wa",
+    "year": 2009,
+    "total": 917.2
+  },
+  {
+    "location": "wa",
+    "year": 2010,
+    "total": 905.7
+  },
+  {
+    "location": "wa",
+    "year": 2011,
+    "total": 980.3
+  },
+  {
+    "location": "wa",
+    "year": 2012,
+    "total": 982.1
+  },
+  {
+    "location": "wa",
+    "year": 2013,
+    "total": 1018.1
+  },
+  {
+    "location": "wa",
+    "year": 2014,
+    "total": 1065.2
+  },
+  {
+    "location": "wa",
+    "year": 2015,
+    "total": 1044.2
+  },
+  {
+    "location": "wa",
+    "year": 2016,
+    "total": 1123.6
+  },
+  {
+    "location": "wa",
+    "year": 2017,
+    "total": 1175.4
+  },
+  {
+    "location": "wa",
+    "year": 2018,
+    "total": 1210.9
+  },
+  {
+    "location": "wa",
+    "year": 2019,
+    "total": 1265
+  },
+  {
+    "location": "wa",
+    "year": 2020,
+    "total": 1271.9
+  },
+  {
+    "location": "tas",
+    "year": 1974,
+    "total": 71.9
+  },
+  {
+    "location": "tas",
+    "year": 1975,
+    "total": 71.3
+  },
+  {
+    "location": "tas",
+    "year": 1976,
+    "total": 71.9
+  },
+  {
+    "location": "tas",
+    "year": 1977,
+    "total": 77
+  },
+  {
+    "location": "tas",
+    "year": 1978,
+    "total": 78.4
+  },
+  {
+    "location": "tas",
+    "year": 1979,
+    "total": 82
+  },
+  {
+    "location": "tas",
+    "year": 1980,
+    "total": 84.6
+  },
+  {
+    "location": "tas",
+    "year": 1981,
+    "total": 83.3
+  },
+  {
+    "location": "tas",
+    "year": 1982,
+    "total": 84.5
+  },
+  {
+    "location": "tas",
+    "year": 1983,
+    "total": 82.3
+  },
+  {
+    "location": "tas",
+    "year": 1984,
+    "total": 83.3
+  },
+  {
+    "location": "tas",
+    "year": 1985,
+    "total": 85
+  },
+  {
+    "location": "tas",
+    "year": 1986,
+    "total": 86.4
+  },
+  {
+    "location": "tas",
+    "year": 1987,
+    "total": 85.4
+  },
+  {
+    "location": "tas",
+    "year": 1988,
+    "total": 89.5
+  },
+  {
+    "location": "tas",
+    "year": 1989,
+    "total": 92
+  },
+  {
+    "location": "tas",
+    "year": 1990,
+    "total": 96.6
+  },
+  {
+    "location": "tas",
+    "year": 1991,
+    "total": 97.6
+  },
+  {
+    "location": "tas",
+    "year": 1992,
+    "total": 89.3
+  },
+  {
+    "location": "tas",
+    "year": 1993,
+    "total": 90.1
+  },
+  {
+    "location": "tas",
+    "year": 1994,
+    "total": 92
+  },
+  {
+    "location": "tas",
+    "year": 1995,
+    "total": 92.4
+  },
+  {
+    "location": "tas",
+    "year": 1996,
+    "total": 93
+  },
+  {
+    "location": "tas",
+    "year": 1997,
+    "total": 94.8
+  },
+  {
+    "location": "tas",
+    "year": 1998,
+    "total": 95.8
+  },
+  {
+    "location": "tas",
+    "year": 1999,
+    "total": 95.7
+  },
+  {
+    "location": "tas",
+    "year": 2000,
+    "total": 95.8
+  },
+  {
+    "location": "tas",
+    "year": 2001,
+    "total": 93.6
+  },
+  {
+    "location": "tas",
+    "year": 2002,
+    "total": 97.2
+  },
+  {
+    "location": "tas",
+    "year": 2003,
+    "total": 99.5
+  },
+  {
+    "location": "tas",
+    "year": 2004,
+    "total": 103.4
+  },
+  {
+    "location": "tas",
+    "year": 2005,
+    "total": 107.4
+  },
+  {
+    "location": "tas",
+    "year": 2006,
+    "total": 111.6
+  },
+  {
+    "location": "tas",
+    "year": 2007,
+    "total": 113.3
+  },
+  {
+    "location": "tas",
+    "year": 2008,
+    "total": 115.5
+  },
+  {
+    "location": "tas",
+    "year": 2009,
+    "total": 113.8
+  },
+  {
+    "location": "tas",
+    "year": 2010,
+    "total": 113.7
+  },
+  {
+    "location": "tas",
+    "year": 2011,
+    "total": 113.8
+  },
+  {
+    "location": "tas",
+    "year": 2012,
+    "total": 107
+  },
+  {
+    "location": "tas",
+    "year": 2013,
+    "total": 112.3
+  },
+  {
+    "location": "tas",
+    "year": 2014,
+    "total": 107.5
+  },
+  {
+    "location": "tas",
+    "year": 2015,
+    "total": 104.4
+  },
+  {
+    "location": "tas",
+    "year": 2016,
+    "total": 106.5
+  },
+  {
+    "location": "tas",
+    "year": 2017,
+    "total": 106.8
+  },
+  {
+    "location": "tas",
+    "year": 2018,
+    "total": 110
+  },
+  {
+    "location": "tas",
+    "year": 2019,
+    "total": 107.6
+  },
+  {
+    "location": "tas",
+    "year": 2020,
+    "total": 99.4
+  },
+  {
+    "location": "sa",
+    "year": 1974,
+    "total": 215.4
+  },
+  {
+    "location": "sa",
+    "year": 1975,
+    "total": 222.8
+  },
+  {
+    "location": "sa",
+    "year": 1976,
+    "total": 234.5
+  },
+  {
+    "location": "sa",
+    "year": 1977,
+    "total": 249.3
+  },
+  {
+    "location": "sa",
+    "year": 1978,
+    "total": 247.7
+  },
+  {
+    "location": "sa",
+    "year": 1979,
+    "total": 259.6
+  },
+  {
+    "location": "sa",
+    "year": 1980,
+    "total": 264.2
+  },
+  {
+    "location": "sa",
+    "year": 1981,
+    "total": 255.7
+  },
+  {
+    "location": "sa",
+    "year": 1982,
+    "total": 260
+  },
+  {
+    "location": "sa",
+    "year": 1983,
+    "total": 254.6
+  },
+  {
+    "location": "sa",
+    "year": 1984,
+    "total": 258
+  },
+  {
+    "location": "sa",
+    "year": 1985,
+    "total": 280.2
+  },
+  {
+    "location": "sa",
+    "year": 1986,
+    "total": 284.5
+  },
+  {
+    "location": "sa",
+    "year": 1987,
+    "total": 284.7
+  },
+  {
+    "location": "sa",
+    "year": 1988,
+    "total": 291.1
+  },
+  {
+    "location": "sa",
+    "year": 1989,
+    "total": 299.3
+  },
+  {
+    "location": "sa",
+    "year": 1990,
+    "total": 301.9
+  },
+  {
+    "location": "sa",
+    "year": 1991,
+    "total": 287.4
+  },
+  {
+    "location": "sa",
+    "year": 1992,
+    "total": 296.9
+  },
+  {
+    "location": "sa",
+    "year": 1993,
+    "total": 300.1
+  },
+  {
+    "location": "sa",
+    "year": 1994,
+    "total": 304.8
+  },
+  {
+    "location": "sa",
+    "year": 1995,
+    "total": 304.4
+  },
+  {
+    "location": "sa",
+    "year": 1996,
+    "total": 296.6
+  },
+  {
+    "location": "sa",
+    "year": 1997,
+    "total": 299.7
+  },
+  {
+    "location": "sa",
+    "year": 1998,
+    "total": 311.9
+  },
+  {
+    "location": "sa",
+    "year": 1999,
+    "total": 327.2
+  },
+  {
+    "location": "sa",
+    "year": 2000,
+    "total": 328
+  },
+  {
+    "location": "sa",
+    "year": 2001,
+    "total": 329.3
+  },
+  {
+    "location": "sa",
+    "year": 2002,
+    "total": 328.1
+  },
+  {
+    "location": "sa",
+    "year": 2003,
+    "total": 357.3
+  },
+  {
+    "location": "sa",
+    "year": 2004,
+    "total": 371.5
+  },
+  {
+    "location": "sa",
+    "year": 2005,
+    "total": 355.6
+  },
+  {
+    "location": "sa",
+    "year": 2006,
+    "total": 350.1
+  },
+  {
+    "location": "sa",
+    "year": 2007,
+    "total": 375.5
+  },
+  {
+    "location": "sa",
+    "year": 2008,
+    "total": 372.5
+  },
+  {
+    "location": "sa",
+    "year": 2009,
+    "total": 357.2
+  },
+  {
+    "location": "sa",
+    "year": 2010,
+    "total": 343.7
+  },
+  {
+    "location": "sa",
+    "year": 2011,
+    "total": 342.8
+  },
+  {
+    "location": "sa",
+    "year": 2012,
+    "total": 307.7
+  },
+  {
+    "location": "sa",
+    "year": 2013,
+    "total": 356.3
+  },
+  {
+    "location": "sa",
+    "year": 2014,
+    "total": 343.6
+  },
+  {
+    "location": "sa",
+    "year": 2015,
+    "total": 363.6
+  },
+  {
+    "location": "sa",
+    "year": 2016,
+    "total": 323.2
+  },
+  {
+    "location": "sa",
+    "year": 2017,
+    "total": 294.1
+  },
+  {
+    "location": "sa",
+    "year": 2018,
+    "total": 336
+  },
+  {
+    "location": "sa",
+    "year": 2019,
+    "total": 321.3
+  },
+  {
+    "location": "sa",
+    "year": 2020,
+    "total": 312.7
+  },
+  {
+    "location": "qld",
+    "year": 1974,
+    "total": 371.3
+  },
+  {
+    "location": "qld",
+    "year": 1975,
+    "total": 392.6
+  },
+  {
+    "location": "qld",
+    "year": 1976,
+    "total": 410
+  },
+  {
+    "location": "qld",
+    "year": 1977,
+    "total": 441.8
+  },
+  {
+    "location": "qld",
+    "year": 1978,
+    "total": 461.2
+  },
+  {
+    "location": "qld",
+    "year": 1979,
+    "total": 463.2
+  },
+  {
+    "location": "qld",
+    "year": 1980,
+    "total": 480.2
+  },
+  {
+    "location": "qld",
+    "year": 1981,
+    "total": 502.9
+  },
+  {
+    "location": "qld",
+    "year": 1982,
+    "total": 537.2
+  },
+  {
+    "location": "qld",
+    "year": 1983,
+    "total": 541.5
+  },
+  {
+    "location": "qld",
+    "year": 1984,
+    "total": 571.6
+  },
+  {
+    "location": "qld",
+    "year": 1985,
+    "total": 600.3
+  },
+  {
+    "location": "qld",
+    "year": 1986,
+    "total": 604.8
+  },
+  {
+    "location": "qld",
+    "year": 1987,
+    "total": 620
+  },
+  {
+    "location": "qld",
+    "year": 1988,
+    "total": 642.4
+  },
+  {
+    "location": "qld",
+    "year": 1989,
+    "total": 678.3
+  },
+  {
+    "location": "qld",
+    "year": 1990,
+    "total": 691.8
+  },
+  {
+    "location": "qld",
+    "year": 1991,
+    "total": 702
+  },
+  {
+    "location": "qld",
+    "year": 1992,
+    "total": 715
+  },
+  {
+    "location": "qld",
+    "year": 1993,
+    "total": 758.5
+  },
+  {
+    "location": "qld",
+    "year": 1994,
+    "total": 793.2
+  },
+  {
+    "location": "qld",
+    "year": 1995,
+    "total": 847.3
+  },
+  {
+    "location": "qld",
+    "year": 1996,
+    "total": 882.7
+  },
+  {
+    "location": "qld",
+    "year": 1997,
+    "total": 914.1
+  },
+  {
+    "location": "qld",
+    "year": 1998,
+    "total": 968.5
+  },
+  {
+    "location": "qld",
+    "year": 1999,
+    "total": 983.8
+  },
+  {
+    "location": "qld",
+    "year": 2000,
+    "total": 1009.7
+  },
+  {
+    "location": "qld",
+    "year": 2001,
+    "total": 1020
+  },
+  {
+    "location": "qld",
+    "year": 2002,
+    "total": 1057.8
+  },
+  {
+    "location": "qld",
+    "year": 2003,
+    "total": 1064
+  },
+  {
+    "location": "qld",
+    "year": 2004,
+    "total": 1081.1
+  },
+  {
+    "location": "qld",
+    "year": 2005,
+    "total": 1225.1
+  },
+  {
+    "location": "qld",
+    "year": 2006,
+    "total": 1279.5
+  },
+  {
+    "location": "qld",
+    "year": 2007,
+    "total": 1329
+  },
+  {
+    "location": "qld",
+    "year": 2008,
+    "total": 1287.3
+  },
+  {
+    "location": "qld",
+    "year": 2009,
+    "total": 1345.7
+  },
+  {
+    "location": "qld",
+    "year": 2010,
+    "total": 1294.4
+  },
+  {
+    "location": "qld",
+    "year": 2011,
+    "total": 1249.6
+  },
+  {
+    "location": "qld",
+    "year": 2012,
+    "total": 1314.5
+  },
+  {
+    "location": "qld",
+    "year": 2013,
+    "total": 1334.4
+  },
+  {
+    "location": "qld",
+    "year": 2014,
+    "total": 1335.8
+  },
+  {
+    "location": "qld",
+    "year": 2015,
+    "total": 1433.3
+  },
+  {
+    "location": "qld",
+    "year": 2016,
+    "total": 1461.8
+  },
+  {
+    "location": "qld",
+    "year": 2017,
+    "total": 1529.2
+  },
+  {
+    "location": "qld",
+    "year": 2018,
+    "total": 1547.4
+  },
+  {
+    "location": "qld",
+    "year": 2019,
+    "total": 1515.6
+  },
+  {
+    "location": "qld",
+    "year": 2020,
+    "total": 1477.5
+  },
+  {
+    "location": "nsw",
+    "year": 1974,
+    "total": 943
+  },
+  {
+    "location": "nsw",
+    "year": 1975,
+    "total": 964.7
+  },
+  {
+    "location": "nsw",
+    "year": 1976,
+    "total": 934
+  },
+  {
+    "location": "nsw",
+    "year": 1977,
+    "total": 980.2
+  },
+  {
+    "location": "nsw",
+    "year": 1978,
+    "total": 1011.3
+  },
+  {
+    "location": "nsw",
+    "year": 1979,
+    "total": 1019.3
+  },
+  {
+    "location": "nsw",
+    "year": 1980,
+    "total": 1059
+  },
+  {
+    "location": "nsw",
+    "year": 1981,
+    "total": 1060.4
+  },
+  {
+    "location": "nsw",
+    "year": 1982,
+    "total": 1077.8
+  },
+  {
+    "location": "nsw",
+    "year": 1983,
+    "total": 1002.5
+  },
+  {
+    "location": "nsw",
+    "year": 1984,
+    "total": 1045.6
+  },
+  {
+    "location": "nsw",
+    "year": 1985,
+    "total": 1080.3
+  },
+  {
+    "location": "nsw",
+    "year": 1986,
+    "total": 1108.7
+  },
+  {
+    "location": "nsw",
+    "year": 1987,
+    "total": 1137.1
+  },
+  {
+    "location": "nsw",
+    "year": 1988,
+    "total": 1143.3
+  },
+  {
+    "location": "nsw",
+    "year": 1989,
+    "total": 1194.2
+  },
+  {
+    "location": "nsw",
+    "year": 1990,
+    "total": 1230.4
+  },
+  {
+    "location": "nsw",
+    "year": 1991,
+    "total": 1228.6
+  },
+  {
+    "location": "nsw",
+    "year": 1992,
+    "total": 1219.4
+  },
+  {
+    "location": "nsw",
+    "year": 1993,
+    "total": 1249.1
+  },
+  {
+    "location": "nsw",
+    "year": 1994,
+    "total": 1276.7
+  },
+  {
+    "location": "nsw",
+    "year": 1995,
+    "total": 1314.6
+  },
+  {
+    "location": "nsw",
+    "year": 1996,
+    "total": 1351.2
+  },
+  {
+    "location": "nsw",
+    "year": 1997,
+    "total": 1380.6
+  },
+  {
+    "location": "nsw",
+    "year": 1998,
+    "total": 1382
+  },
+  {
+    "location": "nsw",
+    "year": 1999,
+    "total": 1413.8
+  },
+  {
+    "location": "nsw",
+    "year": 2000,
+    "total": 1426.3
+  },
+  {
+    "location": "nsw",
+    "year": 2001,
+    "total": 1450.5
+  },
+  {
+    "location": "nsw",
+    "year": 2002,
+    "total": 1445.7
+  },
+  {
+    "location": "nsw",
+    "year": 2003,
+    "total": 1510.5
+  },
+  {
+    "location": "nsw",
+    "year": 2004,
+    "total": 1574.8
+  },
+  {
+    "location": "nsw",
+    "year": 2005,
+    "total": 1544.9
+  },
+  {
+    "location": "nsw",
+    "year": 2006,
+    "total": 1546
+  },
+  {
+    "location": "nsw",
+    "year": 2007,
+    "total": 1568.9
+  },
+  {
+    "location": "nsw",
+    "year": 2008,
+    "total": 1610.7
+  },
+  {
+    "location": "nsw",
+    "year": 2009,
+    "total": 1593.5
+  },
+  {
+    "location": "nsw",
+    "year": 2010,
+    "total": 1645.3
+  },
+  {
+    "location": "nsw",
+    "year": 2011,
+    "total": 1667.8
+  },
+  {
+    "location": "nsw",
+    "year": 2012,
+    "total": 1621.3
+  },
+  {
+    "location": "nsw",
+    "year": 2013,
+    "total": 1568.4
+  },
+  {
+    "location": "nsw",
+    "year": 2014,
+    "total": 1516.5
+  },
+  {
+    "location": "nsw",
+    "year": 2015,
+    "total": 1466.8
+  },
+  {
+    "location": "nsw",
+    "year": 2016,
+    "total": 1515.5
+  },
+  {
+    "location": "nsw",
+    "year": 2017,
+    "total": 1522.7
+  },
+  {
+    "location": "nsw",
+    "year": 2018,
+    "total": 1554.5
+  },
+  {
+    "location": "nsw",
+    "year": 2019,
+    "total": 1547.8
+  },
+  {
+    "location": "nsw",
+    "year": 2020,
+    "total": 1468.8
+  }
+]
