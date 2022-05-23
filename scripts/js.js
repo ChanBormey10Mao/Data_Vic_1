@@ -65,27 +65,27 @@ function init() {
   var dataset;
 
   var industry = [
-    "Agriculture",
-    "Mining",
-    "Manufacturing",
-    "Electricity",
-    "Construction",
-    "Transport",
-    "Water",
-    "Commercial",
-    "Residential",
-    "Others",
-  ],
+      "Agriculture",
+      "Mining",
+      "Manufacturing",
+      "Electricity",
+      "Construction",
+      "Transport",
+      "Water",
+      "Commercial",
+      "Residential",
+      "Others",
+    ],
     years = d3.range(1974, 2021);
 
   var margin = { top: 40, right: 50, bottom: 50, left: 85 };
 
   // calculate width and height based on window size
   var w =
-    Math.max(Math.min(window.innerWidth, 1800), 500) -
-    margin.left -
-    margin.right -
-    20,
+      Math.max(Math.min(window.innerWidth, 1800), 500) -
+      margin.left -
+      margin.right -
+      20,
     gridSize = Math.floor(w / years.length),
     h = gridSize * (industry.length + 2);
 
@@ -254,7 +254,7 @@ function init() {
         .style("stroke", "white")
         .style("stroke-opacity", 0.6)
         .style("fill", function (d) {
-          return color(d.value);
+          return colours(d.value / 50);
         })
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
@@ -276,7 +276,7 @@ function init() {
         .transition()
         .duration(500)
         .style("fill", function (d) {
-          return color(d.value);
+          return colours(d.value / 50);
         })
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
@@ -353,7 +353,7 @@ function init() {
         return countScale(countPoint[i]) / w;
       })
       .attr("stop-color", function (d, i) {
-        return color(countPoint[i]);
+        return colours(countPoint[i] / 50);
       });
 
     ////////////////////////// Draw the legend ////////////////////////////////
