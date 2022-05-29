@@ -42,15 +42,7 @@ function init() {
       }
     }
     data = arr2[0];
-    var color = d3.scaleOrdinal([
-      "#98abc5",
-      "#8a89a6",
-      "#7b6888",
-      "#6b486b",
-      "#a05d56",
-      "#d0743c",
-      "#ff8c00",
-    ]);
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Compute the position of each group on the pie:
     var pie = d3.pie().value(function (d) {
@@ -90,7 +82,6 @@ function init() {
             return "purple";
             break;
         }
-        // return color(d.data.value);
       })
       .attr("stroke", "none")
       .style("stroke-width", "2px")
@@ -156,15 +147,8 @@ function init() {
         }
       }
       data = arr2[0];
-      var color = d3.scaleOrdinal([
-        "#98abc5",
-        "#8a89a6",
-        "#7b6888",
-        "#6b486b",
-        "#a05d56",
-        "#d0743c",
-        "#ff8c00",
-      ]);
+      console.log(data);
+      var color = d3.scaleOrdinal(d3.schemeCategory10);
 
       // Compute the position of each group on the pie:
       var pie = d3.pie().value(function (d) {
@@ -203,10 +187,10 @@ function init() {
               return "purple";
               break;
           }
-        })
-        .attr("stroke", "none")
-        .style("stroke-width", "2px")
-        .style("opacity", 0.7);
+        });
+      // .attr("stroke", "black")
+      // .style("stroke-width", "2px")
+      // .style("opacity", 0.7);
       mySlices
         .transition()
         .duration(1000)
@@ -217,10 +201,10 @@ function init() {
           return function (t) {
             return arcGenerator(interpolate(t));
           };
-        })
-        .attrTween("stroke", "none")
-        .styleTween("stroke-width", "2px")
-        .styleTween("opacity", 0.7);
+        });
+      // .attr("stroke", "black")
+      // .style("stroke-width", "2px")
+      // .style("opacity", 0.7);
 
       mySlices.exit().remove();
 
