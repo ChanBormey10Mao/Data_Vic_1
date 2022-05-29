@@ -27,7 +27,7 @@ function init() {
     .attr("height", height)
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-  // svg.append("g").classed("mySlices", true);
+  svg.append("g").classed("slices", true);
   svg.append("g").classed("labels", true);
   svg.append("g").classed("lines", true);
 
@@ -42,7 +42,15 @@ function init() {
       }
     }
     data = arr2[0];
-    var color = d3.scaleOrdinal(d3.schemeCategory10);
+    var color = d3.scaleOrdinal([
+      "#98abc5",
+      "#8a89a6",
+      "#7b6888",
+      "#6b486b",
+      "#a05d56",
+      "#d0743c",
+      "#ff8c00",
+    ]);
 
     // Compute the position of each group on the pie:
     var pie = d3.pie().value(function (d) {
@@ -59,13 +67,36 @@ function init() {
       .append("path")
       .attr("d", arcGenerator)
       .attr("fill", function (d) {
-        return color(d.data.value);
+        switch (d.data.key) {
+          case "VIC":
+            return "blue";
+            break;
+          case "NSW":
+            return "red";
+            break;
+          case "NT":
+            return "green";
+            break;
+          case "TAS":
+            return "grey";
+            break;
+          case "SA":
+            return "yellow";
+            break;
+          case "WA":
+            return "pink";
+            break;
+          case "QLD":
+            return "purple";
+            break;
+        }
+        // return color(d.data.value);
       })
-      .attr("stroke", "black")
+      .attr("stroke", "none")
       .style("stroke-width", "2px")
       .style("opacity", 0.7);
 
-    // mySlices.exit().remove();
+    mySlices.exit().remove();
     /* ------- LINE LABELS  -------*/
     var polyline = svg
       .select(".lines")
@@ -79,7 +110,8 @@ function init() {
         pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
         return [arc.centroid(d), outerArc.centroid(d), pos];
       });
-    // polyline.exit().remove();
+
+    polyline.exit().remove();
     /* ------- TEXT LABELS  -------*/
     var text = svg.select(".labels").selectAll("text").data(data_ready);
     text
@@ -124,7 +156,15 @@ function init() {
         }
       }
       data = arr2[0];
-      var color = d3.scaleOrdinal(d3.schemeCategory10);
+      var color = d3.scaleOrdinal([
+        "#98abc5",
+        "#8a89a6",
+        "#7b6888",
+        "#6b486b",
+        "#a05d56",
+        "#d0743c",
+        "#ff8c00",
+      ]);
 
       // Compute the position of each group on the pie:
       var pie = d3.pie().value(function (d) {
@@ -133,7 +173,6 @@ function init() {
       var data_ready = pie(d3.entries(data));
       // Now I know that group A goes from 0 degrees to x degrees and so on.
 
-      // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
       var mySlices = svg
         .selectAll("mySlices")
         .data(data_ready)
@@ -141,12 +180,33 @@ function init() {
         .append("path")
         .attr("d", arcGenerator)
         .attr("fill", function (d) {
-          return color(d.data.value);
+          switch (d.data.key) {
+            case "VIC":
+              return "blue";
+              break;
+            case "NSW":
+              return "red";
+              break;
+            case "NT":
+              return "green";
+              break;
+            case "TAS":
+              return "grey";
+              break;
+            case "SA":
+              return "yellow";
+              break;
+            case "WA":
+              return "pink";
+              break;
+            case "QLD":
+              return "purple";
+              break;
+          }
         })
-        .attr("stroke", "black")
+        .attr("stroke", "none")
         .style("stroke-width", "2px")
         .style("opacity", 0.7);
-
       mySlices
         .transition()
         .duration(1000)
@@ -155,21 +215,21 @@ function init() {
           var interpolate = d3.interpolate(this._current, d);
           this._current = interpolate(0);
           return function (t) {
-            return arc(interpolate(t));
+            return arcGenerator(interpolate(t));
           };
         })
-        .attrTween("fill", function (d) {
-          return color(d.data.value);
-        })
-        .attrTween("stroke", "white")
+        .attrTween("stroke", "none")
         .styleTween("stroke-width", "2px")
         .styleTween("opacity", 0.7);
+
       mySlices.exit().remove();
+
       /* ------- LINE LABELS  -------*/
       var polyline = svg
         .select(".lines")
         .selectAll("polyline")
-        .data(data_ready)
+        .data(data_ready);
+      polyline
         .enter()
         .append("polyline")
         .attr("points", function (d) {
@@ -178,6 +238,7 @@ function init() {
           pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
           return [arc.centroid(d), outerArc.centroid(d), pos];
         });
+
       polyline
         .transition()
         .duration(1000)
