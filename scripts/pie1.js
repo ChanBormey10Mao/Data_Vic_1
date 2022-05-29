@@ -2,8 +2,8 @@ function init() {
   var valueYear = 2020;
   const sliderValue = document.querySelector("#InputResult");
   const inputSlider = document.querySelector("#inputYear");
-  var width = 500;
-  height = 500;
+  var width = 960;
+  height = 450;
   margin = 40;
 
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -30,18 +30,23 @@ function init() {
   svg.append("g").classed("slices", true);
   svg.append("g").classed("labels", true);
   svg.append("g").classed("lines", true);
-
+  var sum = 0;
+  var percent = [];
   // Create dummy data
   d3.csv("total_aus_by_states.csv", function (d) {
     var arr1 = [];
     var arr2 = [];
+
     for (var i = 0; i < d.length; i++) {
       if (d[i].Year == valueYear) {
         arr1[d[i].State] = d[i].Energy;
+        sum += parseFloat(d[i].Energy);
         arr2.push(arr1);
       }
     }
+
     data = arr2[0];
+
     var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Compute the position of each group on the pie:
@@ -84,8 +89,8 @@ function init() {
         }
       })
       .attr("stroke", "none")
-      .style("stroke-width", "2px")
-      .style("opacity", 0.7);
+      .style("stroke-width", "2px");
+    // .style("opacity", 0.7);
 
     mySlices.exit().remove();
     /* ------- LINE LABELS  -------*/
@@ -98,22 +103,28 @@ function init() {
       .attr("points", function (d) {
         // see label transform function for explanations of these three lines.
         var pos = outerArc.centroid(d);
-        pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
+        pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
         return [arc.centroid(d), outerArc.centroid(d), pos];
       });
 
     polyline.exit().remove();
     /* ------- TEXT LABELS  -------*/
+
     var text = svg.select(".labels").selectAll("text").data(data_ready);
     text
       .enter()
       .append("text")
       .text(function (d) {
-        return d.data.key;
+        return (
+          d.data.key +
+          "(" +
+          parseFloat((d.data.value / sum) * 100).toFixed(2) +
+          "%)"
+        );
       })
       .attr("transform", function (d) {
         var pos = outerArc.centroid(d);
-        pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
+        pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
         return "translate(" + pos + ")";
       })
       .style("text-anchor", function (d) {
@@ -133,7 +144,7 @@ function init() {
     valueYear = inputSlider.value;
     sliderValue.textContent = valueYear;
     console.log("in= " + valueYear);
-
+    sum = 0;
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 
     // Create dummy data
@@ -143,11 +154,12 @@ function init() {
       for (var i = 0; i < d.length; i++) {
         if (d[i].Year == valueYear) {
           arr1[d[i].State] = d[i].Energy;
+          sum += parseFloat(d[i].Energy);
           arr2.push(arr1);
         }
       }
       data = arr2[0];
-      console.log(data);
+      console.log(sum);
       var color = d3.scaleOrdinal(d3.schemeCategory10);
 
       // Compute the position of each group on the pie:
@@ -244,7 +256,12 @@ function init() {
         .enter()
         .append("text")
         .text(function (d) {
-          return d.data.key;
+          return (
+            d.data.key +
+            "(" +
+            parseFloat((d.data.value / sum) * 100).toFixed(2) +
+            "%)"
+          );
         })
         .attr("transform", function (d) {
           var pos = outerArc.centroid(d);
@@ -267,6 +284,14 @@ function init() {
             pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
             return "translate(" + pos + ")";
           };
+        })
+        .text(function (d) {
+          return (
+            d.data.key +
+            "(" +
+            parseFloat((d.data.value / sum) * 100).toFixed(2) +
+            "%)"
+          );
         })
         .styleTween("text-anchor", function (d) {
           this._current = this._current || d;
