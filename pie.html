@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Drawing shape" />
+    <meta charset="utf-8">
+    <meta name="author" content="Pum Suan Khai" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Drawing SVG Shapes with D3</title>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="styles/pie_style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <h1 id="title">Energy Usage In Australia</h1>
+
+    <h3 id="description">Australia Energy Usage from 1973-4 to 2019-20.</h3>
+
+    <ul>
+        <li><a href="index.html">Heat Map</a></li>
+        <li><a href="pie.html">Pie Chart</a></li>
+        <li><a href="#contact">Stack Bar Chart</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span id="InputResult">2020</span>
+            <br>
+        </div>
+        <div class="field">
+            <span class="value left">1974</span>
+            <input type="range" name="" id="inputYear" min="1974" max="2020" value="2020" steps="1">
+            <span class="value right">2020</span>
+        </div>
+        <br>
+        <br>
+        <!-- <button class="randomize">randomize</button> -->
+        <div id="pie_chart">
+            <!-- <svg width="500" hight="400">
+
+            </svg> -->
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/pie1.js"></script>
+</body>
+
+
+</html>

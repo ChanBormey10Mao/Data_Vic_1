@@ -144,7 +144,7 @@ function init() {
     });
     dataset = data;
 
-    var color = d3.scaleOrdinal(d3.schemeCategory10);
+    // var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     // linear colour scale
     var colours = d3
@@ -226,8 +226,6 @@ function init() {
           rightYear = arr2[a1] - 1;
         }
       });
-
-      console.log("Right Year = " + rightYear);
 
       var contentTooltip =
         'Industry : <span style="color:red">' +
