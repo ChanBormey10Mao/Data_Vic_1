@@ -1,7 +1,6 @@
 function init() {
   var valueYear = 2020;
-  const sliderValue = document.querySelector("#InputResult");
-  const inputSlider = document.querySelector("#inputYear");
+
   var width = 960;
   height = 450;
   margin = 40;
@@ -140,10 +139,15 @@ function init() {
   inputSlider.oninput = () => {
     // console.log("sliderValue" + sliderValue.value);
     // console.log("inputSlider" + inputSlider.value);
-
+    var sliderValue = document.querySelector("#InputResult");
+    var inputSlider = document.querySelector("#inputYear");
     valueYear = inputSlider.value;
     sliderValue.textContent = valueYear;
-    console.log("in= " + valueYear);
+    var lablePosition = ((valueYear - 1974) * 100) / (2020 - 1974);
+    // console.log("label Position");
+    // console.log(lablePosition);
+    sliderValue.style.left = lablePosition + "%";
+
     sum = 0;
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 
@@ -159,7 +163,7 @@ function init() {
         }
       }
       data = arr2[0];
-      console.log(sum);
+      // console.log(sum);
       var color = d3.scaleOrdinal(d3.schemeCategory10);
 
       // Compute the position of each group on the pie:
