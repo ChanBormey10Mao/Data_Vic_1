@@ -2,9 +2,8 @@ function init() {
   var valueYear = 2020;
   const sliderValue = document.querySelector("#InputResult");
   const inputSlider = document.querySelector("#inputYear");
-  var width = 960;
-  height = 450;
-  margin = 40;
+  var width = window.innerWidth - window.innerWidth / 4;
+  (height = Math.min(width) / 2 + 100), (margin = 40);
 
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
   var radius = Math.min(width, height) / 2 - margin;
@@ -14,10 +13,6 @@ function init() {
     .arc()
     .innerRadius(radius * 0.8)
     .outerRadius(radius * 0.6);
-  var outerArc = d3
-    .arc()
-    .outerRadius(radius * 0.8)
-    .innerRadius(radius * 0.8);
 
   // append the svg object to the div called 'my_dataviz'
   var svg = d3
@@ -93,6 +88,7 @@ function init() {
     // .style("opacity", 0.7);
 
     mySlices.exit().remove();
+    var outerArc;
     /* ------- LINE LABELS  -------*/
     var polyline = svg
       .select(".lines")
@@ -102,6 +98,28 @@ function init() {
       .append("polyline")
       .attr("points", function (d) {
         // see label transform function for explanations of these three lines.
+
+        if (d.data.key == "NT") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 1);
+        } else if (d.data.key == "TAS") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 1.2);
+        } else if (d.data.key == "SA") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 0.9);
+        } else {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 0.8)
+            .innerRadius(radius * 0.8);
+        }
         var pos = outerArc.centroid(d);
         pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
         return [arc.centroid(d), outerArc.centroid(d), pos];
@@ -123,6 +141,27 @@ function init() {
         );
       })
       .attr("transform", function (d) {
+        if (d.data.key == "NT") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 1);
+        } else if (d.data.key == "TAS") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 1.2);
+        } else if (d.data.key == "SA") {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 1)
+            .innerRadius(radius * 0.9);
+        } else {
+          outerArc = d3
+            .arc()
+            .outerRadius(radius * 0.8)
+            .innerRadius(radius * 0.8);
+        }
         var pos = outerArc.centroid(d);
         pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
         return "translate(" + pos + ")";
@@ -138,9 +177,7 @@ function init() {
   });
 
   inputSlider.oninput = () => {
-    // console.log("sliderValue" + sliderValue.value);
-    // console.log("inputSlider" + inputSlider.value);
-
+    var outerArc;
     valueYear = inputSlider.value;
     sliderValue.textContent = valueYear;
     console.log("in= " + valueYear);
@@ -200,9 +237,7 @@ function init() {
               break;
           }
         });
-      // .attr("stroke", "black")
-      // .style("stroke-width", "2px")
-      // .style("opacity", 0.7);
+
       mySlices
         .transition()
         .duration(1000)
@@ -214,9 +249,6 @@ function init() {
             return arcGenerator(interpolate(t));
           };
         });
-      // .attr("stroke", "black")
-      // .style("stroke-width", "2px")
-      // .style("opacity", 0.7);
 
       mySlices.exit().remove();
 
@@ -230,6 +262,7 @@ function init() {
         .append("polyline")
         .attr("points", function (d) {
           // see label transform function for explanations of these three lines.
+
           var pos = outerArc.centroid(d);
           pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
           return [arc.centroid(d), outerArc.centroid(d), pos];
@@ -244,6 +277,27 @@ function init() {
           this._current = interpolate(0);
           return function (t) {
             var d2 = interpolate(t);
+            if (d.data.key == "NT") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 1);
+            } else if (d.data.key == "TAS") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 1.2);
+            } else if (d.data.key == "SA") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 0.9);
+            } else {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 0.8)
+                .innerRadius(radius * 0.8);
+            }
             var pos = outerArc.centroid(d2);
             pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
             return [arc.centroid(d2), outerArc.centroid(d2), pos];
@@ -280,6 +334,27 @@ function init() {
           this._current = interpolate(0);
           return function (t) {
             var d2 = interpolate(t);
+            if (d.data.key == "NT") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 1);
+            } else if (d.data.key == "TAS") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 1.2);
+            } else if (d.data.key == "SA") {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 1)
+                .innerRadius(radius * 0.9);
+            } else {
+              outerArc = d3
+                .arc()
+                .outerRadius(radius * 0.8)
+                .innerRadius(radius * 0.8);
+            }
             var pos = outerArc.centroid(d2);
             pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
             return "translate(" + pos + ")";
