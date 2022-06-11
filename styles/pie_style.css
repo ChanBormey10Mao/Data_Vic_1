@@ -29,7 +29,7 @@ html,
   width: 100%;
 }
 .range .sliderValue span {
-  position: relative;
+  position: absolute;
   height: 45px;
   width: 45px;
   background: #fff;
@@ -41,12 +41,12 @@ html,
   z-index: 2;
 }
 .range .sliderValue span:after {
-  position: relative;
+  position: absolute;
   content: "";
   height: 45px;
   width: 45px;
   background: #664aff;
-  left: 100%;
+  left: 50%;
   transform: translateX(-50%) rotate(45deg);
   border: 3px solid #fff;
   line-height: 55px;
