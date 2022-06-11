@@ -2816,7 +2816,7 @@
   {
     "location": "victoria",
     "industry": 10,
-    "year": 47,
+    "year": 46,
     "value": 16.6
   },
   {
@@ -16918,5 +16918,2825 @@
     "industry": 10,
     "year": 47,
     "value": 14.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 1,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 2,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 3,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 4,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 5,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 6,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 7,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 8,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 9,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 10,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 11,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 12,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 13,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 14,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 15,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 16,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 17,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 18,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 19,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 20,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 21,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 22,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 23,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 24,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 25,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 26,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 27,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 28,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 29,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 30,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 31,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 32,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 33,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 34,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 35,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 36,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 37,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 38,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 39,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 40,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 41,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 42,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 43,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 44,
+    "value": 1.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 45,
+    "value": 1.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 46,
+    "value": 1.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 1,
+    "year": 47,
+    "value": 1.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 1,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 2,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 3,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 4,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 5,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 6,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 7,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 8,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 9,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 10,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 11,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 12,
+    "value": 1.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 13,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 14,
+    "value": 1.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 15,
+    "value": 1.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 16,
+    "value": 2.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 17,
+    "value": 2.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 18,
+    "value": 2.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 19,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 20,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 21,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 22,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 23,
+    "value": 3.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 24,
+    "value": 3.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 25,
+    "value": 4.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 26,
+    "value": 3.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 27,
+    "value": 3.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 28,
+    "value": 3
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 29,
+    "value": 3.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 30,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 31,
+    "value": 3.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 32,
+    "value": 5.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 33,
+    "value": 16.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 34,
+    "value": 26.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 35,
+    "value": 24.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 36,
+    "value": 25.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 37,
+    "value": 20
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 38,
+    "value": 23.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 39,
+    "value": 21.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 40,
+    "value": 26
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 41,
+    "value": 26.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 42,
+    "value": 25
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 43,
+    "value": 26.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 44,
+    "value": 24.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 45,
+    "value": 28
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 46,
+    "value": 59.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 2,
+    "year": 47,
+    "value": 78.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 1,
+    "value": 14.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 2,
+    "value": 15.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 3,
+    "value": 15.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 4,
+    "value": 16.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 5,
+    "value": 16.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 6,
+    "value": 16
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 7,
+    "value": 16.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 8,
+    "value": 16.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 9,
+    "value": 14.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 10,
+    "value": 15.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 11,
+    "value": 16.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 12,
+    "value": 16.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 13,
+    "value": 15.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 14,
+    "value": 15.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 15,
+    "value": 17.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 16,
+    "value": 16.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 17,
+    "value": 16.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 18,
+    "value": 17.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 19,
+    "value": 18.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 20,
+    "value": 18.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 21,
+    "value": 19.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 22,
+    "value": 19.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 23,
+    "value": 19.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 24,
+    "value": 20.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 25,
+    "value": 20.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 26,
+    "value": 21.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 27,
+    "value": 22.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 28,
+    "value": 21.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 29,
+    "value": 21.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 30,
+    "value": 23
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 31,
+    "value": 23.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 32,
+    "value": 22.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 33,
+    "value": 22.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 34,
+    "value": 23.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 35,
+    "value": 27.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 36,
+    "value": 21.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 37,
+    "value": 23
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 38,
+    "value": 24
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 39,
+    "value": 24.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 40,
+    "value": 23.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 41,
+    "value": 17.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 42,
+    "value": 2.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 43,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 44,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 45,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 46,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 3,
+    "year": 47,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 1,
+    "value": 4.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 2,
+    "value": 4.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 3,
+    "value": 4.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 4,
+    "value": 5.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 5,
+    "value": 5.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 6,
+    "value": 5.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 7,
+    "value": 7.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 8,
+    "value": 7.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 9,
+    "value": 7.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 10,
+    "value": 8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 11,
+    "value": 8.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 12,
+    "value": 9
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 13,
+    "value": 9.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 14,
+    "value": 10.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 15,
+    "value": 10.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 16,
+    "value": 10.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 17,
+    "value": 11.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 18,
+    "value": 11.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 19,
+    "value": 11.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 20,
+    "value": 11.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 21,
+    "value": 11.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 22,
+    "value": 12.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 23,
+    "value": 13.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 24,
+    "value": 14.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 25,
+    "value": 14.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 26,
+    "value": 16.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 27,
+    "value": 18.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 28,
+    "value": 15.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 29,
+    "value": 15.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 30,
+    "value": 4.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 31,
+    "value": 6
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 32,
+    "value": 7
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 33,
+    "value": 6.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 34,
+    "value": 5.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 35,
+    "value": 16.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 36,
+    "value": 21.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 37,
+    "value": 23.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 38,
+    "value": 22.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 39,
+    "value": 22.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 40,
+    "value": 22.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 41,
+    "value": 22.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 42,
+    "value": 24.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 43,
+    "value": 23.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 44,
+    "value": 24.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 45,
+    "value": 27.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 46,
+    "value": 33.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 4,
+    "year": 47,
+    "value": 33.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 1,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 2,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 3,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 4,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 5,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 6,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 7,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 8,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 9,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 10,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 11,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 12,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 13,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 14,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 15,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 16,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 17,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 18,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 19,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 20,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 21,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 22,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 23,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 24,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 25,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 26,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 27,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 28,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 29,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 30,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 31,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 32,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 33,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 34,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 35,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 36,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 37,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 38,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 39,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 40,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 41,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 42,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 43,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 44,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 45,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 46,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 5,
+    "year": 47,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 1,
+    "value": 7.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 2,
+    "value": 8.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 3,
+    "value": 6.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 4,
+    "value": 7.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 5,
+    "value": 8.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 6,
+    "value": 8.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 7,
+    "value": 10.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 8,
+    "value": 9.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 9,
+    "value": 10.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 10,
+    "value": 10.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 11,
+    "value": 11.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 12,
+    "value": 12.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 13,
+    "value": 13.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 14,
+    "value": 14.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 15,
+    "value": 14.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 16,
+    "value": 14.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 17,
+    "value": 14.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 18,
+    "value": 15.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 19,
+    "value": 16.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 20,
+    "value": 16.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 21,
+    "value": 17.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 22,
+    "value": 19.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 23,
+    "value": 21.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 24,
+    "value": 21.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 25,
+    "value": 22
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 26,
+    "value": 22.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 27,
+    "value": 22.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 28,
+    "value": 21.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 29,
+    "value": 22
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 30,
+    "value": 15.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 31,
+    "value": 14.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 32,
+    "value": 15.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 33,
+    "value": 17.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 34,
+    "value": 15.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 35,
+    "value": 16.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 36,
+    "value": 14.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 37,
+    "value": 14.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 38,
+    "value": 18.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 39,
+    "value": 18.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 40,
+    "value": 18.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 41,
+    "value": 18.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 42,
+    "value": 21.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 43,
+    "value": 20.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 44,
+    "value": 20.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 45,
+    "value": 21.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 46,
+    "value": 28.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 6,
+    "year": 47,
+    "value": 25.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 1,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 2,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 3,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 4,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 5,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 6,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 7,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 8,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 9,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 10,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 11,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 12,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 13,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 14,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 15,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 16,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 17,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 18,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 19,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 20,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 21,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 22,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 23,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 24,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 25,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 26,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 27,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 28,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 29,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 30,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 31,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 32,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 33,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 34,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 35,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 36,
+    "value": 0
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 37,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 38,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 39,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 40,
+    "value": 0
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 41,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 42,
+    "value": 0
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 43,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 44,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 45,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 46,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 7,
+    "year": 47,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 1,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 2,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 3,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 4,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 5,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 6,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 7,
+    "value": 1.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 8,
+    "value": 1.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 9,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 10,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 11,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 12,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 13,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 14,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 15,
+    "value": 2.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 16,
+    "value": 2.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 17,
+    "value": 2.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 18,
+    "value": 2.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 19,
+    "value": 2.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 20,
+    "value": 2.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 21,
+    "value": 2.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 22,
+    "value": 3.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 23,
+    "value": 3.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 24,
+    "value": 3.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 25,
+    "value": 3.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 26,
+    "value": 3.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 27,
+    "value": 3.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 28,
+    "value": 5.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 29,
+    "value": 5.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 30,
+    "value": 6.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 31,
+    "value": 6.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 32,
+    "value": 6
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 33,
+    "value": 6
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 34,
+    "value": 6.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 35,
+    "value": 6.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 36,
+    "value": 6.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 37,
+    "value": 7.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 38,
+    "value": 6.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 39,
+    "value": 6.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 40,
+    "value": 6.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 41,
+    "value": 9
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 42,
+    "value": 6.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 43,
+    "value": 7.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 44,
+    "value": 7.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 45,
+    "value": 7.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 46,
+    "value": 6.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 8,
+    "year": 47,
+    "value": 6.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 1,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 2,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 3,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 4,
+    "value": 1.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 5,
+    "value": 1.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 6,
+    "value": 1.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 7,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 8,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 9,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 10,
+    "value": 1.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 11,
+    "value": 1.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 12,
+    "value": 1.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 13,
+    "value": 1.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 14,
+    "value": 1.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 15,
+    "value": 1.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 16,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 17,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 18,
+    "value": 2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 19,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 20,
+    "value": 2.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 21,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 22,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 23,
+    "value": 2.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 24,
+    "value": 2.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 25,
+    "value": 2.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 26,
+    "value": 2.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 27,
+    "value": 2.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 28,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 29,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 30,
+    "value": 2.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 31,
+    "value": 2.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 32,
+    "value": 2.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 33,
+    "value": 2.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 34,
+    "value": 2.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 35,
+    "value": 3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 36,
+    "value": 3.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 37,
+    "value": 3.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 38,
+    "value": 2.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 39,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 40,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 41,
+    "value": 2.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 42,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 43,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 44,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 45,
+    "value": 2.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 46,
+    "value": 2.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 9,
+    "year": 47,
+    "value": 2.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 1,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 2,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 3,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 4,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 5,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 6,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 7,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 8,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 9,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 10,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 11,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 12,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 13,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 14,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 15,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 16,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 17,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 18,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 19,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 20,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 21,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 22,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 23,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 24,
+    "value": 1.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 25,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 26,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 27,
+    "value": 1
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 28,
+    "value": 0.9
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 29,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 30,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 31,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 32,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 33,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 34,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 35,
+    "value": 0.8
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 36,
+    "value": 0.7
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 37,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 38,
+    "value": 0.6
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 39,
+    "value": 0.4
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 40,
+    "value": 0.5
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 41,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 42,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 43,
+    "value": 0.3
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 44,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 45,
+    "value": 0.2
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 46,
+    "value": 0.1
+  },
+  {
+    "location": "northern territory",
+    "industry": 10,
+    "year": 47,
+    "value": 0.2
   }
 ]
