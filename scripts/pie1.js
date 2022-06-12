@@ -182,6 +182,7 @@ function init() {
     sliderValue.textContent = valueYear;
     console.log("in= " + valueYear);
     sum = 0;
+    // sliderValue.style.left = ((valueYear - 1974) * 100).toString() - 46 + "%";
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 
     // Create dummy data
