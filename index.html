@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+<style>
+    .white {
+        color: white;
+        text-decoration: none;
+    }
+</style>
 
 <body>
     <h1 id="title">Energy Usage In Australia</h1>
@@ -18,26 +24,50 @@
     <h3 id="description">Australia Energy Usage from 1973-4 to 2019-20.</h3>
 
     <ul>
-        <li><a href="heatGrids.html">Heat Map</a></li>
-        <li><a href="pie.html">Pie Chart</a></li>
-        <li style="float:right"><a class="active" href="index.html
+        <li><a class="white" href="heatGrids.html">Heat Map</a></li>
+        <li><a class="white" href="pie.html">Pie Chart</a></li>
+        <li class="white" style="float:right"><a class="active" href="index.html
             ">Home</a></li>
     </ul>
 
     <div class="row">
         <div class="col-12">
-            <img src="img/susbg.png" alt="">
+            <img src="img/sus*img.jpeg" alt="" class="mainPic">
+
+            <div class="card-text" style="align-items: center;">This graph is intended to show Australian residents and
+                compare energy consumption
+                each year in order
+                to maintain sustainability, particularly in the industry sector, which includes the government
+                sectors and electricity companies, environmentalists, and global citizen. </div>
+
         </div>
         <div class="col-sm-12, col-md-6 card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="img/heatGrids.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Heat Grids</h5>
+                <p class="card-text">If you are looking for </p>
+                <div>
+                    <p class="card-text">- any specific or detailted information</p>
+                    <p class="card-text">- see the trend of energy usage of each state or industry</p>
+                </div>
+
+                <br>
+                <a href="heatGrids.html" class="btn btn-primary btn-lg">Click Here</a>
             </div>
         </div>
-        <div class="col-sm-12, col-md-6"></div>
+        <div class="col-sm-12, col-md-6 card" style="width: 18rem;">
+            <img class="card-img-top" src="img/donute.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Donut Chart</h5>
+                <p class="card-text">If you are looking for </p>
+                <div>
+                    <p class="card-text">- any comparison between state</p>
+                    <p class="card-text">- Australia as a whole in different years</p>
+                </div>
+                <br>
+                <a href="pie.html" class="btn btn-primary btn-lg">Click Here</a>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
