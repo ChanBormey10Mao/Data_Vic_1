@@ -185,5 +185,6 @@ div.tooltip {
 .card-text {
   padding: 2% 2%;
   font-size: 19px;
-  line-height: 0.8em;
+  line-height: 1em;
+  text-align: center;
 }
